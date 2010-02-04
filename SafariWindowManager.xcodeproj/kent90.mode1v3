@@ -204,7 +204,7 @@
 				<key>PBXProjectModuleGUID</key>
 				<string>E26DE2B1111AB25F00B738C8</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>SWMPlugin.m</string>
+				<string>SWMPluginMain.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
@@ -212,16 +212,16 @@
 						<key>PBXProjectModuleGUID</key>
 						<string>E26DE2C7111AC43900B738C8</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>SWMPlugin.m</string>
+						<string>SWMPluginMain.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>E26DE3EC111B1AA000B738C8</string>
+						<string>E26DE40D111B506100B738C8</string>
 						<key>history</key>
 						<array>
 							<string>E26DE39B111B0D6100B738C8</string>
-							<string>E26DE3DF111B194100B738C8</string>
-							<string>E26DE3E0111B194100B738C8</string>
+							<string>E26DE40B111B506100B738C8</string>
+							<string>E26DE40C111B506100B738C8</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -272,8 +272,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -310,11 +308,8 @@
 							<array>
 								<string>E2E26F6B1118227A0007B2BF</string>
 								<string>E2E26F7E111822A40007B2BF</string>
+								<string>E26DE3F6111B500800B738C8</string>
 								<string>E2E26FC7111864D00007B2BF</string>
-								<string>E2E26FDD111873A20007B2BF</string>
-								<string>E2E26FDC111873A20007B2BF</string>
-								<string>E26DE315111AEA8D00B738C8</string>
-								<string>E26DE318111AEA8F00B738C8</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>E26DE2DE111ACE8A00B738C8</string>
 								<string>1C37FAAC04509CD000000102</string>
@@ -323,9 +318,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>4</integer>
-									<integer>1</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -360,12 +353,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SWMPlugin.m</string>
+								<string>SWMPluginMain.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -373,11 +368,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SWMPlugin.m</string>
+										<string>SWMPluginMain.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E26DE3EB111B1AA000B738C8</string>
+										<string>E26DE40A111B506100B738C8</string>
 										<key>history</key>
 										<array>
 											<string>E26DE376111AF7D800B738C8</string>
@@ -385,7 +380,9 @@
 											<string>E26DE3B2111B10A100B738C8</string>
 											<string>E26DE3BD111B11DB00B738C8</string>
 											<string>E26DE3E9111B1AA000B738C8</string>
-											<string>E26DE3EA111B1AA000B738C8</string>
+											<string>E26DE406111B506100B738C8</string>
+											<string>E26DE408111B506100B738C8</string>
+											<string>E26DE409111B506100B738C8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -585,6 +582,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>E26DE404111B505C00B738C8</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>E2E27003111875F00007B2BF</string>
 		<string>E26DE2B1111AB25F00B738C8</string>
@@ -607,12 +605,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SWMPlugin.m</string>
+								<string>SWMPluginMain.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -629,8 +629,6 @@
 							<string>183pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1378,33 +1376,40 @@
 			<integer>0</integer>
 		</dict>
 		<dict>
+			<key>FirstTimeWindowDisplayed</key>
+			<false/>
 			<key>Identifier</key>
 			<string>windowTool.refactoring</string>
 			<key>IncludeInToolsMenu</key>
 			<integer>0</integer>
+			<key>IsVertical</key>
+			<true/>
 			<key>Layout</key>
 			<array>
 				<dict>
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<integer>1</integer>
+							<key>ContentConfiguration</key>
+							<dict>
+								<key>PBXProjectModuleGUID</key>
+								<string>E26DE403111B505C00B738C8</string>
+							</dict>
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{0, 0}, {500, 335}</string>
+								<string>{{0, 0}, {500, 315}}</string>
 								<key>RubberWindowFrame</key>
-								<string>{0, 0}, {500, 335}</string>
+								<string>84 399 500 356 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCRefactoringModule</string>
 							<key>Proportion</key>
-							<string>100%</string>
+							<string>315pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>100%</string>
+					<string>315pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -1413,8 +1418,20 @@
 			<array>
 				<string>XCRefactoringModule</string>
 			</array>
+			<key>StatusbarIsVisible</key>
+			<true/>
+			<key>TableOfContents</key>
+			<array>
+				<string>E26DE404111B505C00B738C8</string>
+				<string>E26DE405111B505C00B738C8</string>
+				<string>E26DE403111B505C00B738C8</string>
+			</array>
 			<key>WindowString</key>
-			<string>200 200 500 356 0 0 1920 1200 </string>
+			<string>84 399 500 356 0 0 1280 778 </string>
+			<key>WindowToolGUID</key>
+			<string>E26DE404111B505C00B738C8</string>
+			<key>WindowToolIsVisible</key>
+			<false/>
 		</dict>
 	</array>
 </dict>

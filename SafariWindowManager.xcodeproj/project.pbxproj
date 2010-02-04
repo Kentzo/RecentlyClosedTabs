@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		E26DE3AF111B0FF400B738C8 /* NSNull+ObjectOrNull.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */; };
-		E2E26FE2111873D10007B2BF /* SWMPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPlugin.m */; };
+		E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3F4111B500300B738C8 /* JRSwizzle.m */; };
+		E2E26FE2111873D10007B2BF /* SWMPluginMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPluginMain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E26DE3AD111B0FF400B738C8 /* NSNull+ObjectOrNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+ObjectOrNull.h"; sourceTree = "<group>"; };
 		E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+ObjectOrNull.m"; sourceTree = "<group>"; };
-		E2E26FC8111864E10007B2BF /* SWMPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPlugin.h; sourceTree = "<group>"; };
-		E2E26FC9111864E10007B2BF /* SWMPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPlugin.m; sourceTree = "<group>"; };
+		E26DE3F3111B500300B738C8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		E26DE3F4111B500300B738C8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
+		E2E26FC8111864E10007B2BF /* SWMPluginMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginMain.h; sourceTree = "<group>"; };
+		E2E26FC9111864E10007B2BF /* SWMPluginMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginMain.m; sourceTree = "<group>"; };
 		E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpedSafariHeaders.h; sourceTree = "<group>"; };
 		E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariWindowManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E26FDE111873A20007B2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +35,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E26DE3F6111B500800B738C8 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				E26DE3F3111B500300B738C8 /* JRSwizzle.h */,
+				E26DE3F4111B500300B738C8 /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
 		E2E26F6B1118227A0007B2BF = {
 			isa = PBXGroup;
 			children = (
@@ -44,6 +56,7 @@
 		E2E26F7E111822A40007B2BF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E26DE3F6111B500800B738C8 /* JRSwizzle */,
 				E26DE3AD111B0FF400B738C8 /* NSNull+ObjectOrNull.h */,
 				E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */,
 				E2E26FC7111864D00007B2BF /* Plugin */,
@@ -55,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
-				E2E26FC8111864E10007B2BF /* SWMPlugin.h */,
-				E2E26FC9111864E10007B2BF /* SWMPlugin.m */,
+				E2E26FC8111864E10007B2BF /* SWMPluginMain.h */,
+				E2E26FC9111864E10007B2BF /* SWMPluginMain.m */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -122,8 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E26FE2111873D10007B2BF /* SWMPlugin.m in Sources */,
+				E2E26FE2111873D10007B2BF /* SWMPluginMain.m in Sources */,
 				E26DE3AF111B0FF400B738C8 /* NSNull+ObjectOrNull.m in Sources */,
+				E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
