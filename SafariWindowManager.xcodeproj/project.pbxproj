@@ -1,0 +1,229 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E26DE3AF111B0FF400B738C8 /* NSNull+ObjectOrNull.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */; };
+		E2E26FE2111873D10007B2BF /* SWMPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E26DE3AD111B0FF400B738C8 /* NSNull+ObjectOrNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+ObjectOrNull.h"; sourceTree = "<group>"; };
+		E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+ObjectOrNull.m"; sourceTree = "<group>"; };
+		E2E26FC8111864E10007B2BF /* SWMPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPlugin.h; sourceTree = "<group>"; };
+		E2E26FC9111864E10007B2BF /* SWMPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPlugin.m; sourceTree = "<group>"; };
+		E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpedSafariHeaders.h; sourceTree = "<group>"; };
+		E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariWindowManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E26FDE111873A20007B2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2E26FDA111873A20007B2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2E26F6B1118227A0007B2BF = {
+			isa = PBXGroup;
+			children = (
+				E2E26F7E111822A40007B2BF /* Sources */,
+				E2E26FDD111873A20007B2BF /* Products */,
+				E2E26FDE111873A20007B2BF /* Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		E2E26F7E111822A40007B2BF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E26DE3AD111B0FF400B738C8 /* NSNull+ObjectOrNull.h */,
+				E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */,
+				E2E26FC7111864D00007B2BF /* Plugin */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		E2E26FC7111864D00007B2BF /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
+				E2E26FC8111864E10007B2BF /* SWMPlugin.h */,
+				E2E26FC9111864E10007B2BF /* SWMPlugin.m */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		E2E26FDD111873A20007B2BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2E26FDB111873A20007B2BF /* SafariWindowManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E26FE1111873A30007B2BF /* Build configuration list for PBXNativeTarget "SafariWindowManager" */;
+			buildPhases = (
+				E2E26FD9111873A20007B2BF /* Sources */,
+				E2E26FD8111873A20007B2BF /* Resources */,
+				E2E26FDA111873A20007B2BF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariWindowManager;
+			productName = SafariWindowManager;
+			productReference = E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2E26F6D1118227A0007B2BF /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "SafariWindowManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = E2E26F6B1118227A0007B2BF;
+			productRefGroup = E2E26FDD111873A20007B2BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2E26FDB111873A20007B2BF /* SafariWindowManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2E26FD8111873A20007B2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2E26FD9111873A20007B2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E26FE2111873D10007B2BF /* SWMPlugin.m in Sources */,
+				E26DE3AF111B0FF400B738C8 /* NSNull+ObjectOrNull.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E2E26F6E1118227A0007B2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		E2E26F6F1118227A0007B2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		E2E26FDF111873A30007B2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SafariWindowManager;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E2E26FE0111873A30007B2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SafariWindowManager;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "SafariWindowManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E26F6E1118227A0007B2BF /* Debug */,
+				E2E26F6F1118227A0007B2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E26FE1111873A30007B2BF /* Build configuration list for PBXNativeTarget "SafariWindowManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E26FDF111873A30007B2BF /* Debug */,
+				E2E26FE0111873A30007B2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2E26F6D1118227A0007B2BF /* Project object */;
+}

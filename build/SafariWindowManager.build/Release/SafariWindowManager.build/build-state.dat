@@ -1,0 +1,481 @@
+TSafariWindowManager
+v7
+r0
+t286988137.981124
+cCheck dependencies
+cProcessInfoPlistFile "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/Info.plist" Info.plist
+cProcessPCH /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-asgwtrbzbhrdnzedjmsjsypwxwre/AppKit.h.pth /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gvdvbpbhzanykhbhskvbvvxpyjmm/AppKit.h.pth /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ctuflkxntblchzdfipwxoxpouvbf/AppKit.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal ppc objective-c com.apple.compilers.llvmgcc42
+cCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SWMPlugin.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/NSNull+ObjectOrNull.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager" normal x86_64
+cCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SWMPlugin.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/NSNull+ObjectOrNull.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager" normal i386
+cCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SWMPlugin.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" normal ppc objective-c com.apple.compilers.llvmgcc42
+cCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/NSNull+ObjectOrNull.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" normal ppc objective-c com.apple.compilers.llvmgcc42
+cLd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager" normal ppc
+cCreateUniversalBinary "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager" normal "x86_64 i386 ppc"
+cGenerateDSYMFile "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle.dSYM" "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager"
+cTouch "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004B69504800000000000000EE
+t1265193032
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004A67D2A800000000000017ED
+t1248318120
+s6125
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004AB9AA2700000000000013E6
+t1253681703
+s5094
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.h
+c000000004A6E9EEC0000000000000957
+t1248763628
+s2391
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/BrowserWebView.h
+c000000004B6841AB00000000000045E9
+t1265123755
+s17897
+i"SearchableWebView.h"
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/BrowserWindow.h
+c000000004B687D1200000000000008AC
+t1265138962
+s2220
+i"Window.h"
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/BrowserWindowController.h
+c000000004B6ABF3900000000000048D0
+t1265286969
+s18640
+i"WindowController.h"
+i"MorphingDragImageDropTarget.h"
+i"ReopensAtLaunch.h"
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/DumpedSafariHeaders.h
+c000000004B6AC5BC0000000000000166
+t1265288636
+s358
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/MorphingDragImageDropTarget.h
+c000000004B6ABECA0000000000000200
+t1265286858
+s512
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.h
+c000000004B1401160000000000000210
+t1259602198
+s528
+i<Foundation/Foundation.h>
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m
+c000000004B6AD8BD00000000000000BB
+t1265293501
+s187
+i"NSNull+ObjectOrNull.h"
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNullAdditions.h
+c000000004B1401160000000000000210
+t1259602198
+s528
+i<Foundation/Foundation.h>
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNullAdditions.m
+c000000004B6AD8BD00000000000000BB
+t1265293501
+s187
+i"NSNull+ObjectOrNull.h"
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/ReopensAtLaunch.h
+c000000004B6ABF1200000000000000D9
+t1265286930
+s217
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.h
+c000000004B6ADFD70000000000000224
+t1265295319
+s548
+i<Foundation/Foundation.h>
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m
+c000000004B6ADFD40000000000000C2F
+t1265295316
+s3119
+i"SWMPlugin.h"
+i"DumpedSafariHeaders.h"
+i"NSNull+ObjectOrNull.h"
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SearchableWebView.h
+c000000004B682D2F0000000000000516
+t1265118511
+s1302
+i"WebViewPlus.h"
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/WebViewPlus.h
+c000000004B682D24000000000000043E
+t1265118500
+s1086
+i<WebKit/WebKit.h>
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/Window.h
+c000000004B6820DB00000000000004D9
+t1265115355
+s1241
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/WindowController.h
+c000000004B6ABF1E000000000000040F
+t1265286942
+s1039
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/$(
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/Co
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/Contents
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/Contents/MacOS
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle
+t1265295319
+s102
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle.dSYM
+t1265295319
+s102
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/Info.plist
+t1265128318
+s877
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager
+t1265295319
+s65908
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/myfile
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/NSNull+ObjectOrNull.o
+t1265293596
+s2736
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/NSNullAdditions.o
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SWMPlugin.o
+t1265295319
+s12840
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager
+t1265295319
+s20196
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager.LinkFileList
+c000000004B6AD91C000000000000015E
+t1265293596
+s350
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/NSNull+ObjectOrNull.o
+t1265293597
+s2944
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/NSNullAdditions.o
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SWMPlugin.o
+t1265295319
+s16520
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager
+t1265295319
+s20852
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager.LinkFileList
+c000000004B6AD91C000000000000015C
+t1265293596
+s348
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/NSNull+ObjectOrNull.o
+t1265293596
+s3464
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/NSNullAdditions.o
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SWMPlugin.o
+t1265295319
+s19452
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager
+t1265295319
+s17032
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager.LinkFileList
+c000000004B6AD91C0000000000000162
+t1265293596
+s354
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Script-E26DE2DD111ACE8500B738C8.sh
+c000000004B6AB7B40000000000000046
+t1265285044
+s70
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/StaticAnalyzer/normal/i386/SWMPlugin.plist
+t1265287358
+s1758
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/StaticAnalyzer/normal/x86_64/SWMPlugin.plist
+t1265287358
+s1758
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/myfile
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/myfile
+c00000000000000000000000000000000
+t2
+s0
+
+N/var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-asgwtrbzbhrdnzedjmsjsypwxwre/AppKit.h.pth
+t1265124203
+s7387764
+
+N/var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ctuflkxntblchzdfipwxoxpouvbf/AppKit.h.gch
+t1265124207
+s38355760
+
+N/var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gvdvbpbhzanykhbhskvbvvxpyjmm/AppKit.h.pth
+t1265123161
+s8031308
+
+NInfo.plist
+c000000004B684344000000000000037A
+t1265124164
+s890
+
+CAnalyze "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m"
+s286980157.884183
+e286980158.250121
+r1
+xAnalyze
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m
+o/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m:81:12:{81:32-81:104}: warning: Value stored to 'closingWindowTabs' during its initialization is never read
+o                 NSArray* closingWindowTabs = [(BrowserWindowController*)[closingWindow windowController] orderedTabs];
+o                          ^                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m:81:12:{81:32-81:104}: warning: Value stored to 'closingWindowTabs' during its initialization is never read
+o                 NSArray* closingWindowTabs = [(BrowserWindowController*)[closingWindow windowController] orderedTabs];
+o                          ^                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o1 diagnostic generated.
+o1 diagnostic generated.
+lSLF07#2@91"Analyze /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m286980157#286980158#0(454"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m:81:12:{81:32-81:104}: warning: Value stored to 'closingWindowTabs' during its initialization is never read                 NSArray* closingWindowTabs = [(BrowserWindowController*)[closingWindow windowController] orderedTabs];                          ^                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1 diagnostic generated.1(0@75"Value stored to 'closingWindowTabs' during its initialization is never read286980158#18446744073709551615#0#1(21@75"Value stored to 'closingWindowTabs' during its initialization is never read286980158#18446744073709551615#0#0(6@83"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m286979362#81#12#0#0#0"1(6@83"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m286979362#81#32#81#103#75"Value stored to 'closingWindowTabs' during its initialization is never read6@83"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m286979362#81#12#0#0#10"Dead store0(19"Dead initialization0#0#83"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m4300885448#2047"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-generated-files.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-own-target-headers.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-all-target-headers.hmap" -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-project-headers.hmap" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources/i386" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources" -include /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gvdvbpbhzanykhbhskvbvvxpyjmm/AppKit.h --analyze "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/StaticAnalyzer/normal/i386/SWMPlugin.plist"0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies286988137#286988137#0(0"0(0#1#0"4300885448#0"0#
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/NSNull+ObjectOrNull.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s286986396.875657
+e286986396.944441
+r1
+xCompileC
+xbuild/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/NSNull+ObjectOrNull.o
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@101"Compile /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m286986396#286986396#0(0"0(0#0#93"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m4300885448#2049"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-generated-files.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-own-target-headers.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-all-target-headers.hmap" -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-project-headers.hmap" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources/i386" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources" -include /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gvdvbpbhzanykhbhskvbvvxpyjmm/AppKit.h -c "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/NSNull+ObjectOrNull.o"0#
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/NSNullAdditions.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNullAdditions.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SWMPlugin.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s286988119.358594
+e286988119.536916
+r1
+xCompileC
+xbuild/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SWMPlugin.o
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@91"Compile /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m286988119#286988119#0(0"0(0#0#83"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m4300885448#2029"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-generated-files.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-own-target-headers.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-all-target-headers.hmap" -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-project-headers.hmap" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources/i386" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources" -include /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gvdvbpbhzanykhbhskvbvvxpyjmm/AppKit.h -c "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SWMPlugin.o"0#
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/NSNull+ObjectOrNull.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" normal ppc objective-c com.apple.compilers.llvmgcc42
+s286986396.989326
+e286986397.170106
+r1
+xCompileC
+xbuild/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/NSNull+ObjectOrNull.o
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@101"Compile /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m286986396#286986397#0(0"0(0#0#93"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m4300885448#2053"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-generated-files.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-own-target-headers.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-all-target-headers.hmap" -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-project-headers.hmap" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources/ppc" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources" -isysroot /Developer/SDKs/MacOSX10.6.sdk -include /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ctuflkxntblchzdfipwxoxpouvbf/AppKit.h -c "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/NSNull+ObjectOrNull.o"0#
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/NSNullAdditions.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNullAdditions.m" normal ppc objective-c com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SWMPlugin.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" normal ppc objective-c com.apple.compilers.llvmgcc42
+s286988119.564900
+e286988119.765163
+r1
+xCompileC
+xbuild/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SWMPlugin.o
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@91"Compile /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m286988119#286988119#0(0"0(0#0#83"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m4300885448#2033"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-generated-files.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-own-target-headers.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-all-target-headers.hmap" -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-project-headers.hmap" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources/ppc" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources" -isysroot /Developer/SDKs/MacOSX10.6.sdk -include /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ctuflkxntblchzdfipwxoxpouvbf/AppKit.h -c "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SWMPlugin.o"0#
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/NSNull+ObjectOrNull.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s286986396.742246
+e286986396.789764
+r1
+xCompileC
+xbuild/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/NSNull+ObjectOrNull.o
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@101"Compile /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m286986396#286986396#0(0"0(0#0#93"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m4300885448#2055"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-generated-files.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-own-target-headers.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-all-target-headers.hmap" -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-project-headers.hmap" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources/x86_64" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources" -include /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-asgwtrbzbhrdnzedjmsjsypwxwre/AppKit.h -c "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNull+ObjectOrNull.m" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/NSNull+ObjectOrNull.o"0#
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/NSNullAdditions.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/NSNullAdditions.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SWMPlugin.o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s286988119.347018
+e286988119.517773
+r1
+xCompileC
+xbuild/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SWMPlugin.o
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@91"Compile /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m286988119#286988119#0(0"0(0#0#83"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m4300885448#2035"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -Wno-trigraphs -fpascal-strings -Os -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-generated-files.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-own-target-headers.hmap" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-all-target-headers.hmap" -iquote "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-project-headers.hmap" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources/x86_64" "-I/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources" -include /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-asgwtrbzbhrdnzedjmsjsypwxwre/AppKit.h -c "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SWMPlugin.m" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SWMPlugin.o"0#
+
+CCreateUniversalBinary "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager" normal "x86_64 i386 ppc"
+s286988119.798606
+e286988119.802325
+r1
+xCreateUniversalBinary
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@122"CreateUniversalBinary build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager normal "x86_64 i386 ppc"286988119#286988119#0(0"0(0#0#87"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/x86_64 i386 ppc4300885448#806"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    /usr/bin/lipo -create "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager" "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager" "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager" -output "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager"0#
+
+CGenerateDSYMFile "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle.dSYM" "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager"
+s286988119.802447
+e286988119.819890
+r1
+xGenerateDSYMFile
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle.dSYM
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager
+lSLF07#2@138"GenerateDSYMFile build/Release/SafariWindowManager.bundle.dSYM build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager286988119#286988119#0(0"0(0#0#147"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager4300885448#386"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    /Developer/usr/bin/dsymutil "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager" -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle.dSYM"0#
+
+CLd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager" normal i386
+s286988119.537365
+e286988119.583967
+r1
+xLd
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager
+xnormal
+xi386
+lSLF07#2@182"Link /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager286988119#286988119#0(0"0(0#0#0"4300885448#843"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" -filelist "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager.LinkFileList" -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager"0#
+
+CLd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager" normal ppc
+s286988119.765276
+e286988119.798491
+r1
+xLd
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager
+xnormal
+xppc
+lSLF07#2@181"Link /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager286988119#286988119#0(0"0(0#0#0"4300885448#847"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/llvm-gcc-4.2 -arch ppc -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" -filelist "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager.LinkFileList" -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager"0#
+
+CLd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager" normal x86_64
+s286988119.517890
+e286988119.564771
+r1
+xLd
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager
+xnormal
+xx86_64
+lSLF07#2@184"Link /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager286988119#286988119#0(0"0(0#0#0"4300885448#849"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch x86_64 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" "-F/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release" -filelist "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager.LinkFileList" -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager"0#
+
+CPhaseScriptExecution "Run Script" "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Script-E26DE2DD111ACE8500B738C8.sh"
+s286977844.113635
+e286977844.648090
+r0
+xPhaseScriptExecution
+xRun Script
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Script-E26DE2DD111ACE8500B738C8.sh
+o                       Ultimate Packer for eXecutables
+o                          Copyright (C) 1996 - 2009
+oUPX 3.04        Markus Oberhumer, Laszlo Molnar & John Reiser   Sep 27th 2009
+o
+o        File size         Ratio      Format      Name
+o   --------------------   ------   -----------   -----------
+oupx: /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager: UnknownExecutableFormatException
+o
+oPacked 0 files.
+lSLF07#2@36"Run custom shell script 'Run Script'286977844#286977844#0(545"                       Ultimate Packer for eXecutables                          Copyright (C) 1996 - 2009UPX 3.04        Markus Oberhumer, Laszlo Molnar & John Reiser   Sep 27th 2009        File size         Ratio      Format      Name   --------------------   ------   -----------   -----------upx: /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager: UnknownExecutableFormatExceptionPacked 0 files.Command /bin/sh failed with exit code 18(13@55"                       Ultimate Packer for eXecutables286977844#0#55#0(1@0"0(13@52"                          Copyright (C) 1996 - 2009286977844#55#52#0(1@0"0(13@78"UPX 3.04        Markus Oberhumer, Laszlo Molnar & John Reiser   Sep 27th 2009286977844#107#78#0(1@0"0(13@54"        File size         Ratio      Format      Name286977844#186#54#0(1@0"0(13@61"   --------------------   ------   -----------   -----------286977844#240#61#0(1@0"0(13@187"upx: /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager: UnknownExecutableFormatException286977844#301#187#0(1@0"0(13@16"Packed 0 files.286977844#489#16#0(1@0"0(4@39"Command /bin/sh failed with exit code 1286977844#18446744073709551615#0#0(1@0"0(0#0#0"4300885448#18857"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER kent90    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build"    setenv BUILD_ROOT "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build"    setenv BUILD_STYLE Release    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release"    setenv CACHE_ROOT /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle"    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Release    setenv CONFIGURATION_BUILD_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release"    setenv CONFIGURATION_TEMP_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release"    setenv CONTENTS_FOLDER_PATH SafariWindowManager.bundle/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH ppc    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/SafariWindowManager.dst    setenv DWARF_DSYM_FILE_NAME SafariWindowManager.bundle.dSYM    setenv DWARF_DSYM_FOLDER_PATH "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release"    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH SafariWindowManager.bundle/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH SafariWindowManager.bundle/Contents/MacOS    setenv EXECUTABLE_NAME SafariWindowManager    setenv EXECUTABLE_PATH SafariWindowManager.bundle/Contents/MacOS/SafariWindowManager    setenv FILE_LIST "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH SafariWindowManager.bundle/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME SafariWindowManager.bundle    setenv GCC3_VERSION 3.3    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_MODEL_TUNING G5    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH SafariWindowManager.bundle/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/SafariWindowManager.dst/Users/kent90/Library/Bundles    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER kent90    setenv INSTALL_PATH /Users/kent90/Library/Bundles    setenv INSTALL_ROOT /tmp/SafariWindowManager.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH SafariWindowManager.bundle/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SafariWindowManager-LinkMap-normal-ppc.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release\" "    setenv LIBRDMN_SRC /Users/kent90/Documents/projects/iPhone/RDMN    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/i386/SafariWindowManager.LinkFileList"    setenv LINK_FILE_LIST_normal_ppc "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/ppc/SafariWindowManager.LinkFileList"    setenv LINK_FILE_LIST_normal_x86_64 "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal/x86_64/SafariWindowManager.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1062    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0602    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Objects-normal"    setenv OBJROOT "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build"    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-framework Foundation -framework AppKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH SafariWindowManager.bundle/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/PkgInfo"    setenv PKGINFO_PATH SafariWindowManager.bundle/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH SafariWindowManager.bundle/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH SafariWindowManager.bundle/Contents/PrivateHeaders    setenv PRODUCT_NAME SafariWindowManager    setenv PRODUCT_SETTINGS_PATH "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT SafariWindowManager    setenv PROJECT_DERIVED_FILE_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/DerivedSources"    setenv PROJECT_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv PROJECT_FILE_PATH "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SafariWindowManager.xcodeproj"    setenv PROJECT_NAME SafariWindowManager    setenv PROJECT_TEMP_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build"    setenv PUBLIC_HEADERS_FOLDER_PATH SafariWindowManager.bundle/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH SafariWindowManager.bundle/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_NAME macosx10.6    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH SafariWindowManager.bundle/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH SafariWindowManager.bundle/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv SRCROOT "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/SymbolRepositories"    setenv SYMROOT "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME SafariWindowManager    setenv TARGET_BUILD_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release"    setenv TARGET_NAME SafariWindowManager    setenv TARGET_TEMP_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build"    setenv TEMP_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build"    setenv TEMP_FILES_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build"    setenv TEMP_FILE_DIR "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build"    setenv TEMP_ROOT "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build"    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH SafariWindowManager.bundle/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER kent90    setenv USER_APPS_DIR /Users/kent90/Applications    setenv USER_LIBRARY_DIR /Users/kent90/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH SafariWindowManager.bundle/Contents/version.plist    setenv VERSION_INFO_BUILDER kent90    setenv VERSION_INFO_FILE SafariWindowManager_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:SafariWindowManager  PROJECT:SafariWindowManager-\""    setenv WRAPPER_EXTENSION bundle    setenv WRAPPER_NAME SafariWindowManager.bundle    setenv WRAPPER_SUFFIX .bundle    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0321    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c "\"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/SafariWindowManager.build/Release/SafariWindowManager.build/Script-E26DE2DD111ACE8500B738C8.sh\""1#
+
+CProcessInfoPlistFile "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/Info.plist" Info.plist
+s286821118.088423
+e286821118.092028
+r1
+xProcessInfoPlistFile
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist286821118#286821118#0(0"0(0#0#82"/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/Info.plist4300885448#297"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-asgwtrbzbhrdnzedjmsjsypwxwre/AppKit.h.pth /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-ctuflkxntblchzdfipwxoxpouvbf/AppKit.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal ppc objective-c com.apple.compilers.llvmgcc42
+r0
+
+CProcessPCH /var/folders/mQ/mQp81+6BELW253DCI6E3oU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AppKit-gvdvbpbhzanykhbhskvbvvxpyjmm/AppKit.h.pth /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CTouch "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle"
+s286988119.819992
+e286988119.823530
+r1
+xTouch
+x/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle
+lSLF07#2@118"Touch /Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle286988119#286988119#0(0"0(0#0#0"4300885448#218"    cd "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager"    /usr/bin/touch -c "/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/build/Release/SafariWindowManager.bundle"0#
+
