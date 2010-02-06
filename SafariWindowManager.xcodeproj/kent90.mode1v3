@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>E26DE6D4111E0B0E00B738C8</string>
+						<string>E26DE6EC111E0DAB00B738C8</string>
 						<key>history</key>
 						<array>
 							<string>E26DE597111D8B4F00B738C8</string>
@@ -285,8 +285,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -384,7 +382,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E26DE6D2111E0B0E00B738C8</string>
+										<string>E26DE6EB111E0DAB00B738C8</string>
 										<key>history</key>
 										<array>
 											<string>E26DE406111B506100B738C8</string>
@@ -605,8 +603,8 @@
 		<string>E26DE404111B505C00B738C8</string>
 		<string>E26DE451111B5E8000B738C8</string>
 		<string>E2E27003111875F00007B2BF</string>
-		<string>/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SafariWindowManager.xcodeproj</string>
 		<string>E26DE567111D81B800B738C8</string>
+		<string>/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SafariWindowManager.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 146 1280 632 0 0 1280 778 </string>
