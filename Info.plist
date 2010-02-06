@@ -18,6 +18,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CFBundleName</key>
+	<string>SafariWindowManager</string>
+	<key>NSPrincipalClass</key>
+	<string>SWMPluginLoader</string>
 	<key>SpiceRack</key>
 	<dict>
 		<key>TargetID</key>
@@ -25,7 +29,9 @@
 		<key>AlertType</key>
 		<string>log</string>
 		<key>Homepage</key>
-		<string>127.0.0.1</string>
+		<string>http://twitter.com/kentzo</string>
+		<key>MinVersion</key>
+		<string>4.0.4</string>
 	</dict>
 </dict>
 </plist>
