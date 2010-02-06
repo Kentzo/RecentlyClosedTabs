@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E26DE3AF111B0FF400B738C8 /* NSNull+ObjectOrNull.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */; };
 		E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3F4111B500300B738C8 /* JRSwizzle.m */; };
-		E2E26FE2111873D10007B2BF /* SWMPluginMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPluginMain.m */; };
+		E26DE460111B725600B738C8 /* DumpedSafariHeaders+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE45F111B725600B738C8 /* DumpedSafariHeaders+Extensions.m */; };
+		E26DE566111D80C400B738C8 /* NSDictionary+WindowObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE565111D80C400B738C8 /* NSDictionary+WindowObject.m */; };
+		E26DE58B111D89E300B738C8 /* NSDictionary+TabObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE58A111D89E300B738C8 /* NSDictionary+TabObject.m */; };
+		E26DE5B4111DB30100B738C8 /* SWMPluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE5B3111DB30100B738C8 /* SWMPluginController.m */; };
+		E26DE685111DEEBC00B738C8 /* SWMNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE684111DEEBC00B738C8 /* SWMNotifications.m */; };
+		E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E26DE3AD111B0FF400B738C8 /* NSNull+ObjectOrNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+ObjectOrNull.h"; sourceTree = "<group>"; };
-		E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+ObjectOrNull.m"; sourceTree = "<group>"; };
 		E26DE3F3111B500300B738C8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
 		E26DE3F4111B500300B738C8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
-		E2E26FC8111864E10007B2BF /* SWMPluginMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginMain.h; sourceTree = "<group>"; };
-		E2E26FC9111864E10007B2BF /* SWMPluginMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginMain.m; sourceTree = "<group>"; };
+		E26DE45E111B725600B738C8 /* DumpedSafariHeaders+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DumpedSafariHeaders+Extensions.h"; sourceTree = "<group>"; };
+		E26DE45F111B725600B738C8 /* DumpedSafariHeaders+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DumpedSafariHeaders+Extensions.m"; sourceTree = "<group>"; };
+		E26DE521111D4BC200B738C8 /* SWMExtending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMExtending.h; sourceTree = "<group>"; };
+		E26DE564111D80C400B738C8 /* NSDictionary+WindowObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WindowObject.h"; sourceTree = "<group>"; };
+		E26DE565111D80C400B738C8 /* NSDictionary+WindowObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WindowObject.m"; sourceTree = "<group>"; };
+		E26DE589111D89E300B738C8 /* NSDictionary+TabObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TabObject.h"; sourceTree = "<group>"; };
+		E26DE58A111D89E300B738C8 /* NSDictionary+TabObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TabObject.m"; sourceTree = "<group>"; };
+		E26DE5B2111DB30100B738C8 /* SWMPluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginController.h; sourceTree = "<group>"; };
+		E26DE5B3111DB30100B738C8 /* SWMPluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginController.m; sourceTree = "<group>"; };
+		E26DE683111DEEBC00B738C8 /* SWMNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMNotifications.h; sourceTree = "<group>"; };
+		E26DE684111DEEBC00B738C8 /* SWMNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMNotifications.m; sourceTree = "<group>"; };
+		E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginLoader.h; sourceTree = "<group>"; };
+		E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginLoader.m; sourceTree = "<group>"; };
 		E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpedSafariHeaders.h; sourceTree = "<group>"; };
 		E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariWindowManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E26FDE111873A20007B2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +57,27 @@
 			name = JRSwizzle;
 			sourceTree = "<group>";
 		};
+		E26DE559111D800C00B738C8 /* Safari Headers and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
+				E26DE45E111B725600B738C8 /* DumpedSafariHeaders+Extensions.h */,
+				E26DE45F111B725600B738C8 /* DumpedSafariHeaders+Extensions.m */,
+			);
+			name = "Safari Headers and Extensions";
+			sourceTree = "<group>";
+		};
+		E26DE561111D808600B738C8 /* Core Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E26DE564111D80C400B738C8 /* NSDictionary+WindowObject.h */,
+				E26DE565111D80C400B738C8 /* NSDictionary+WindowObject.m */,
+				E26DE589111D89E300B738C8 /* NSDictionary+TabObject.h */,
+				E26DE58A111D89E300B738C8 /* NSDictionary+TabObject.m */,
+			);
+			name = "Core Objects";
+			sourceTree = "<group>";
+		};
 		E2E26F6B1118227A0007B2BF = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +90,10 @@
 		E2E26F7E111822A40007B2BF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E26DE3F6111B500800B738C8 /* JRSwizzle */,
-				E26DE3AD111B0FF400B738C8 /* NSNull+ObjectOrNull.h */,
-				E26DE3AE111B0FF400B738C8 /* NSNull+ObjectOrNull.m */,
 				E2E26FC7111864D00007B2BF /* Plugin */,
+				E26DE3F6111B500800B738C8 /* JRSwizzle */,
+				E26DE683111DEEBC00B738C8 /* SWMNotifications.h */,
+				E26DE684111DEEBC00B738C8 /* SWMNotifications.m */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -67,9 +101,13 @@
 		E2E26FC7111864D00007B2BF /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
-				E2E26FC8111864E10007B2BF /* SWMPluginMain.h */,
-				E2E26FC9111864E10007B2BF /* SWMPluginMain.m */,
+				E26DE561111D808600B738C8 /* Core Objects */,
+				E26DE559111D800C00B738C8 /* Safari Headers and Extensions */,
+				E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */,
+				E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */,
+				E26DE521111D4BC200B738C8 /* SWMExtending.h */,
+				E26DE5B2111DB30100B738C8 /* SWMPluginController.h */,
+				E26DE5B3111DB30100B738C8 /* SWMPluginController.m */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -135,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E26FE2111873D10007B2BF /* SWMPluginMain.m in Sources */,
-				E26DE3AF111B0FF400B738C8 /* NSNull+ObjectOrNull.m in Sources */,
+				E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */,
 				E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */,
+				E26DE460111B725600B738C8 /* DumpedSafariHeaders+Extensions.m in Sources */,
+				E26DE566111D80C400B738C8 /* NSDictionary+WindowObject.m in Sources */,
+				E26DE58B111D89E300B738C8 /* NSDictionary+TabObject.m in Sources */,
+				E26DE5B4111DB30100B738C8 /* SWMPluginController.m in Sources */,
+				E26DE685111DEEBC00B738C8 /* SWMNotifications.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
