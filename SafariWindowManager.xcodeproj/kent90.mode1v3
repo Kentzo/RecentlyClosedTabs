@@ -202,39 +202,31 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>E26DE567111D81B800B738C8</string>
+				<string>E26DE780111EBAAA00B738C8</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>DumpedSafariHeaders+Extensions.m</string>
+				<string>SWMPluginLoader.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>E26DE582111D898700B738C8</string>
+						<string>E26DE7A1111EC42C00B738C8</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>DumpedSafariHeaders+Extensions.m</string>
+						<string>SWMPluginLoader.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>E26DE6EC111E0DAB00B738C8</string>
+						<string>E26DE82E111ED61800B738C8</string>
 						<key>history</key>
 						<array>
-							<string>E26DE597111D8B4F00B738C8</string>
-							<string>E26DE598111D8B4F00B738C8</string>
-							<string>E26DE599111D8B4F00B738C8</string>
-							<string>E26DE59A111D8B4F00B738C8</string>
-							<string>E26DE697111DF40C00B738C8</string>
-							<string>E26DE698111DF40C00B738C8</string>
-							<string>E26DE699111DF40C00B738C8</string>
-							<string>E26DE69A111DF40C00B738C8</string>
-							<string>E26DE69C111DF40C00B738C8</string>
-							<string>E26DE69D111DF40C00B738C8</string>
-							<string>E26DE69F111DF40C00B738C8</string>
-							<string>E26DE6AA111DF59200B738C8</string>
-							<string>E26DE6B2111DF60400B738C8</string>
-							<string>E26DE6CF111DFC6D00B738C8</string>
-							<string>E26DE6D3111E0B0E00B738C8</string>
-							<string>E26DE6CB111DFAD300B738C8</string>
+							<string>E26DE7A3111EC42C00B738C8</string>
+							<string>E26DE7A5111EC42C00B738C8</string>
+							<string>E26DE7F9111ECFC400B738C8</string>
+							<string>E26DE827111ED60900B738C8</string>
+							<string>E26DE828111ED60900B738C8</string>
+							<string>E26DE829111ED60900B738C8</string>
+							<string>E26DE82A111ED60900B738C8</string>
+							<string>E26DE82B111ED60900B738C8</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -322,6 +314,7 @@
 								<string>E2E26F6B1118227A0007B2BF</string>
 								<string>E2E26F7E111822A40007B2BF</string>
 								<string>E2E26FC7111864D00007B2BF</string>
+								<string>E26DE559111D800C00B738C8</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -329,7 +322,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
+									<integer>5</integer>
+									<integer>4</integer>
+									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -370,7 +365,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SWMNotifications.h</string>
+								<string>DumpedSafariHeaders+Extensions.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -378,29 +373,30 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SWMNotifications.h</string>
+										<string>DumpedSafariHeaders+Extensions.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>E26DE6EB111E0DAB00B738C8</string>
+										<string>E26DE82D111ED61800B738C8</string>
 										<key>history</key>
 										<array>
 											<string>E26DE406111B506100B738C8</string>
 											<string>E26DE48C111C223500B738C8</string>
 											<string>E26DE506111CAED900B738C8</string>
-											<string>E26DE55D111D803600B738C8</string>
 											<string>E26DE593111D8B4F00B738C8</string>
 											<string>E26DE594111D8B4F00B738C8</string>
 											<string>E26DE5AA111DB2D700B738C8</string>
 											<string>E26DE5B8111DB4DF00B738C8</string>
 											<string>E26DE5B9111DB4DF00B738C8</string>
-											<string>E26DE5BA111DB4DF00B738C8</string>
-											<string>E26DE5BB111DB4DF00B738C8</string>
-											<string>E26DE5E3111DCD6A00B738C8</string>
-											<string>E26DE5FF111DDB9A00B738C8</string>
-											<string>E26DE693111DF40C00B738C8</string>
-											<string>E26DE694111DF40C00B738C8</string>
-											<string>E26DE695111DF40C00B738C8</string>
+											<string>E26DE74C111E1A9500B738C8</string>
+											<string>E26DE74D111E1A9500B738C8</string>
+											<string>E26DE74E111E1A9500B738C8</string>
+											<string>E26DE74F111E1A9500B738C8</string>
+											<string>E26DE79B111EC42C00B738C8</string>
+											<string>E26DE79D111EC42C00B738C8</string>
+											<string>E26DE79E111EC42C00B738C8</string>
+											<string>E26DE820111ED3AB00B738C8</string>
+											<string>E26DE80E111ED0AE00B738C8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -412,14 +408,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {906, 363}}</string>
+								<string>{{0, 0}, {906, 355}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 146 1280 632 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>363pt</string>
+							<string>355pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -432,14 +428,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 368}, {906, 223}}</string>
+								<string>{{0, 360}, {906, 231}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 146 1280 632 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>223pt</string>
+							<string>231pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -458,9 +454,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E26DE446111B5A7700B738C8</string>
+				<string>E26DE752111E1A9500B738C8</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>E26DE447111B5A7700B738C8</string>
+				<string>E26DE753111E1A9500B738C8</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -575,7 +571,7 @@
 	<key>PerspectivesBarVisible</key>
 	<false/>
 	<key>PinnedNavigatorIdentifier</key>
-	<string>E26DE567111D81B800B738C8</string>
+	<string>E26DE780111EBAAA00B738C8</string>
 	<key>ShelfIsVisible</key>
 	<false/>
 	<key>SourceDescription</key>
@@ -600,10 +596,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>E26DE404111B505C00B738C8</string>
-		<string>E26DE451111B5E8000B738C8</string>
 		<string>E2E27003111875F00007B2BF</string>
-		<string>E26DE567111D81B800B738C8</string>
+		<string>E26DE780111EBAAA00B738C8</string>
 		<string>/Users/kent90/Documents/projects/Mac/Safari Plugins/SafariWindowManager/SafariWindowManager.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -630,7 +626,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SWMPluginController.m</string>
+								<string>DumpedSafariHeaders+Extensions.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -686,7 +682,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>E2E27003111875F00007B2BF</string>
-				<string>E26DE448111B5A7700B738C8</string>
+				<string>E26DE748111E1A7E00B738C8</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -819,12 +815,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>DumpedSafariHeaders+Extensions.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -880,8 +878,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>E26DE34D111AF4F900B738C8</string>
-				<string>E26DE34E111AF4F900B738C8</string>
+				<string>E26DE810111ED0AE00B738C8</string>
+				<string>E26DE811111ED0AE00B738C8</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -1416,18 +1414,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {500, 315}}</string>
+								<string>{{0, 0}, {847, 358}}</string>
 								<key>RubberWindowFrame</key>
-								<string>79 410 500 356 0 0 1280 778 </string>
+								<string>79 367 847 399 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCRefactoringModule</string>
 							<key>Proportion</key>
-							<string>315pt</string>
+							<string>358pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>315pt</string>
+					<string>358pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -1441,11 +1439,11 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>E26DE404111B505C00B738C8</string>
-				<string>E26DE5A7111DB2C900B738C8</string>
+				<string>E26DE798111EC3E600B738C8</string>
 				<string>E26DE403111B505C00B738C8</string>
 			</array>
 			<key>WindowString</key>
-			<string>79 410 500 356 0 0 1280 778 </string>
+			<string>79 367 847 399 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>E26DE404111B505C00B738C8</string>
 			<key>WindowToolIsVisible</key>
