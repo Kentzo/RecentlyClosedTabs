@@ -7,28 +7,41 @@
  *
  */
 
+@class BrowserWindow, BrowserWindowController, BrowserWebView, BrowserTabViewItem, BrowserDocumentController, BrowserDocument;
+
 @interface BrowserWindow
-- (id)windowController;
-- (NSRect)frame;
-- (NSInteger)level;
-- (id)currentTabViewItem;
+- (BrowserWindowController*)windowController; // returns window controller of the window. Derived from NSWindow.
+- (NSRect)frame; // returns frame of the window. Derived from NSWindow.
+- (NSInteger)level; // returns layer level of the window. Derived from NSWindow.
+- (BrowserTabViewItem*)currentTabViewItem; // returns selected BrowserTabViewItem object.
+- (void)close; // this method will be called when BrowserWindow closes.
 @end
 
 @interface BrowserWindowController
-- (id)orderedTabs;
-- (id)orderedTabViewItems;
-- (void)closeTab:(id)arg1;
-- (id)createTab;
+- (NSArray*)orderedTabs; // returns ordered array of tabs.
+- (void)closeTab:(id)arg1; // this method will be called when any tab are closed.
+- (BrowserWebView*)createTab; // creates tab and returns it. 
+- (BrowserWindow*)window; // returns window connected to the controller. Derived from NSWindowController.
+- (BrowserDocument*)document; // returns BrowserDocument object which owns this window.
 @end
 
 @interface BrowserWebView
-- (id)currentTitle;
-- (id)currentURL;
-- (id)document;
+- (NSString*)currentTitle;
+- (NSURL*)currentURL;
 - (void)goToURL:(id)arg1;
-- (id)undoManagerForWebView:(id)arg1;
+- (NSUndoManager*)undoManagerForWebView:(BrowserWebView*)arg1;
 @end
 
 @interface BrowserTabViewItem
-- (id)webView;
+- (BrowserWebView*)webView;
+@end
+
+@interface BrowserDocument
+-(BrowserWindowController*)browserWindowController;
+- (NSUndoManager*)undoManager;
+@end
+
+@interface BrowserDocumentController
+- (BrowserDocument*)openEmptyBrowserDocument;
+- (void)SWMReOpenDocumnetWithTabs:(NSArray*)tabURLs;
 @end

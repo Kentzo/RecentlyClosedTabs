@@ -14,3 +14,11 @@
 - (void)SWMCloseTab:(id)arg;
 - (void)SWMNewTabWithURL:(NSURL*)url;
 @end
+
+@interface BrowserWindowExtension : NSObject <SWMExtending>
+- (void)SWMCloseWindow;
+@end
+
+@interface BrowserDocumentControllerExtension : NSObject <SWMExtending>
+- (void)SWMReOpenDocumnetWithTabs:(NSArray*)tabURLs;
+@end
