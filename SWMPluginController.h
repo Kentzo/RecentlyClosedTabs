@@ -9,11 +9,17 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface SWMPluginController : NSObject {
-	NSMutableArray* windowsHistory;
-}
-@property (retain) NSMutableArray* windowsHistory;
+@class BrowserWindow;
 
-- (void)safariWindowWillClose:(NSNotification*)notification;
+@interface SWMPluginController : NSObject {
+	NSMutableArray* windowHistory;
+	NSUInteger maxObjectsInWindowHistory;
+}
+@property (retain) NSMutableArray* windowHistory;
+@property NSUInteger maxObjectsInWindowHistory;
+
++ (SWMPluginController*)sharedInstance;
+
+- (void)safariWindowWillClose:(BrowserWindow*)closingWindow;
 
 @end
