@@ -9,4 +9,6 @@
 #import "SWMNotifications.h"
 
 NSString* const SWMSafariTabWillCloseNotification = @"SWMSafariTabWillCloseNotification";
-NSString* const SWMSafariTabIsOpenedNotification = @"SWMSafariTabIsOpenedNotification";
+NSString* const SWMSafariTabWasOpenedNotification = @"SWMSafariTabIsOpenedNotification";
+
+NSString* const SWMSafariWindowWillCloseNotification = @"SWMSafariDocumentWillCloseNotification";

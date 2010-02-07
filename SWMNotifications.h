@@ -7,4 +7,6 @@
 //
 
 extern NSString* const SWMSafariTabWillCloseNotification;
-extern NSString* const SWMSafariTabIsOpenedNotification;
+extern NSString* const SWMSafariTabWasOpenedNotification;
+
+extern NSString* const SWMSafariWindowWillCloseNotification;
