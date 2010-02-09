@@ -14,6 +14,8 @@
 		E26DE5B4111DB30100B738C8 /* SWMPluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE5B3111DB30100B738C8 /* SWMPluginController.m */; };
 		E2BFAE7E112177470029689B /* SWMUndoCloseTabExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAE7D112177470029689B /* SWMUndoCloseTabExtension.m */; };
 		E2BFAE81112177640029689B /* UnallocableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAE80112177640029689B /* UnallocableObject.m */; };
+		E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAEF911218A5B0029689B /* Runtime.m */; };
+		E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */; };
 		E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +35,10 @@
 		E2BFAE7D112177470029689B /* SWMUndoCloseTabExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMUndoCloseTabExtension.m; sourceTree = "<group>"; };
 		E2BFAE7F112177640029689B /* UnallocableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnallocableObject.h; sourceTree = "<group>"; };
 		E2BFAE80112177640029689B /* UnallocableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnallocableObject.m; sourceTree = "<group>"; };
-		E2BFAEA611217DF20029689B /* Redmine_Manager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Redmine_Manager_Prefix.pch; sourceTree = "<group>"; };
+		E2BFAEF811218A5B0029689B /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		E2BFAEF911218A5B0029689B /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
+		E2BFAF37112193DE0029689B /* SWMCustomToolbarButtonExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMCustomToolbarButtonExtension.h; sourceTree = "<group>"; };
+		E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMCustomToolbarButtonExtension.m; sourceTree = "<group>"; };
 		E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginLoader.h; sourceTree = "<group>"; };
 		E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginLoader.m; sourceTree = "<group>"; };
 		E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpedSafariHeaders.h; sourceTree = "<group>"; };
@@ -64,7 +69,6 @@
 		E26DE559111D800C00B738C8 /* Safari Headers and Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
 				E26DE45E111B725600B738C8 /* DumpedSafariHeaders+Extensions.h */,
 				E26DE45F111B725600B738C8 /* DumpedSafariHeaders+Extensions.m */,
 			);
@@ -85,11 +89,12 @@
 		E2BFAE79112177080029689B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E26DE521111D4BC200B738C8 /* Extending.h */,
+				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
 				E2BFAE7C112177470029689B /* SWMUndoCloseTabExtension.h */,
 				E2BFAE7D112177470029689B /* SWMUndoCloseTabExtension.m */,
-				E26DE521111D4BC200B738C8 /* Extending.h */,
-				E2BFAE7F112177640029689B /* UnallocableObject.h */,
-				E2BFAE80112177640029689B /* UnallocableObject.m */,
+				E2BFAF37112193DE0029689B /* SWMCustomToolbarButtonExtension.h */,
+				E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -106,7 +111,6 @@
 		E2E26F7E111822A40007B2BF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E2BFAEA611217DF20029689B /* Redmine_Manager_Prefix.pch */,
 				E2E26FC7111864D00007B2BF /* Plugin */,
 				E26DE3F6111B500800B738C8 /* JRSwizzle */,
 			);
@@ -116,6 +120,10 @@
 		E2E26FC7111864D00007B2BF /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
+				E2BFAE7F112177640029689B /* UnallocableObject.h */,
+				E2BFAE80112177640029689B /* UnallocableObject.m */,
+				E2BFAEF811218A5B0029689B /* Runtime.h */,
+				E2BFAEF911218A5B0029689B /* Runtime.m */,
 				E2BFAE79112177080029689B /* Extensions */,
 				E26DE561111D808600B738C8 /* Core Objects */,
 				E26DE559111D800C00B738C8 /* Safari Headers and Extensions */,
@@ -196,6 +204,8 @@
 				E26DE5B4111DB30100B738C8 /* SWMPluginController.m in Sources */,
 				E2BFAE7E112177470029689B /* SWMUndoCloseTabExtension.m in Sources */,
 				E2BFAE81112177640029689B /* UnallocableObject.m in Sources */,
+				E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */,
+				E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +221,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx10.6;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -223,6 +234,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx10.6;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -235,7 +247,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
@@ -259,7 +271,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
