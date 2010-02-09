@@ -7,32 +7,33 @@
 //
 
 #import "SWMUndoCloseTabExtension.h"
+#import "JRSwizzle.h"
+#import "Runtime.h"
 
+@implementation SWMUndoCloseTabExtension
 
-
-@implementation UndoCloseTabExtension
-
-static g_UndoCloseTabExtensionEnabled = FALSE;
+static BOOL g_UndoCloseTabExtension_Enabled = FALSE;
 
 #pragma mark Extending
 + (BOOL)enableExtension:(NSError**)error {
-	class_addMethodsFromClass([self extendedClass], self);
-	g_extensionEnabled = [origClass jr_swizzleMethod:@selector(closeTab:) withMethod:@selector(SWMCloseTab:) error:error];
+	Class origClass = [self extendedClass];
+	class_addMethodsFromClass(origClass, self);
+	g_UndoCloseTabExtension_Enabled = [origClass jr_swizzleMethod:@selector(closeTab:) withMethod:@selector(SWMCloseTab:) error:error];
 	
-	return g_extensionEnabled;
+	return g_UndoCloseTabExtension_Enabled;
 }
 + (void)disableExtension {
-	g_extensionEnabled = FALSE;
+	g_UndoCloseTabExtension_Enabled = FALSE;
 }
 + (Class)extendedClass {
 	return NSClassFromString(@"BrowserWindowController");
 }
 + (BOOL)isEnabled {
-	return g_extensionEnabled;
+	return g_UndoCloseTabExtension_Enabled;
 }
 
 - (void)SWMCloseTab:(BrowserTabViewItem*)arg {
-	if (g_UndoCloseTabExtensionEnabled) {		
+	if (g_UndoCloseTabExtension_Enabled) {		
 		NSLog(@"SWMCloseTab: is called");
 		// At runtime this method will belong to BrowserWindowController and have the closeTab: selector
 		BrowserWebView* tab = [(BrowserTabViewItem*)arg webView];
@@ -40,7 +41,7 @@ static g_UndoCloseTabExtensionEnabled = FALSE;
 		// Create undo action
 		NSUndoManager *undoManager = [tab undoManagerForWebView:tab];		
 		[undoManager beginUndoGrouping];
-		[undoManager setActionName:@"Close tab"];
+		[undoManager setActionName:NSLocalizedString(@"Close Tab", nil)];
 		[undoManager registerUndoWithTarget:self selector:@selector(SWMNewTabWithURL:) object:[tab currentURL]];
 		[undoManager endUndoGrouping];
 	}
@@ -48,7 +49,7 @@ static g_UndoCloseTabExtensionEnabled = FALSE;
 	[self SWMCloseTab:arg];
 }
 - (void)SWMNewTabWithURL:(NSURL*)url {
-	NSAssert(g_UndoCloseTabExtensionEnabled, @"SWMNewTabWithURL: was called while extension was disabled");
+	NSAssert(g_UndoCloseTabExtension_Enabled, @"SWMNewTabWithURL: was called while extension was disabled");
 	NSLog(@"SWMNewTabWithURL: is called");
 	// At runtime this method will belong to BrowserWindowController
 	BrowserWebView* tab = [(BrowserWindowController*)self createTab];
@@ -60,7 +61,7 @@ static g_UndoCloseTabExtensionEnabled = FALSE;
 	// Create redo action
 	NSUndoManager *undoManager = [tab undoManagerForWebView:tab];		
 	[undoManager beginUndoGrouping];
-	[undoManager setActionName:@"Close tab"];
+	[undoManager setActionName:NSLocalizedString(@"Close Tab", nil)];
 	[undoManager registerUndoWithTarget:self selector:@selector(closeTab:) object:currentTabItem]; // At runtime closeTab will equal to SWMCloseTab:
 	[undoManager endUndoGrouping];
 }

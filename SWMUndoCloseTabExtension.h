@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DumpedSafariHeaders.h"
 #import "UnallocableObject.h"
 #import "Extending.h"
 
-@interface UndoCloseTabExtension : UnallocableObject <Extending>
+@interface SWMUndoCloseTabExtension : UnallocableObject <DecoratorExtending>
 - (void)SWMCloseTab:(BrowserTabViewItem*)arg;
 - (void)SWMNewTabWithURL:(NSURL*)url;
 @end
