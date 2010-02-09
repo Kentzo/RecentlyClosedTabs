@@ -1,9 +1,0 @@
-//
-// Prefix header for all source files of the 'Redmine Manager' target in the 'Redmine Manager' project
-//
-#import <Availability.h>
-
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-	#import <Cocoa/Cocoa.h>
-#endif
