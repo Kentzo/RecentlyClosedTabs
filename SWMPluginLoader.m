@@ -7,9 +7,9 @@
 //
 
 #import "SWMPluginLoader.h"
-#import "DumpedSafariHeaders+Extensions.h"
+#import "SWMUndoCloseTabExtension.h"
+#import "SWMCustomToolbarButtonExtension.h"
 #import "SWMPluginController.h"
-
 
 static SWMPluginLoader* g_sharedPluginLoader = nil;
 
@@ -18,27 +18,30 @@ static SWMPluginLoader* g_sharedPluginLoader = nil;
 + (void)load {
 	NSError* error = nil;
 	
-	[SWMPluginController new];
+	[SWMUndoCloseTabExtension enableExtension:&error];
+	[SWMCustomToolbarButtonExtension enableExtensionWithDelegate:[SWMPluginController sharedInstance] error:&error];
+	
+//	[SWMPluginController new];
 
-	if ([BrowserWindowControllerExtension enableExtension:&error] == NO) {
-		NSLog(@"SWMPlugin was NOT loaded: cannot load BrowserWindowControllerExtension\n%@", error);
-		return;
-	}
-	
-	if ([BrowserDocumentControllerExtension enableExtension:&error] == NO) {
-		NSLog(@"SWMPlugin was NOT loaded: cannot load BrowserDocumentControllerExtension\n%@", error);
-		return;
-	}
-	
-	if ([BrowserWindowExtension enableExtension:&error] == NO) {
-		NSLog(@"SWMPlugin was NOT loaded: cannot load BrowserWindowExtension\n%@", error);
-		return;
-	}
-	
-	if ([CustomToolBarButtonExtension enableExtension:&error] == NO) {
-		NSLog(@"SWMPlugin was NOT loaded: cannot load ToolbarControllerExtension\n%@", error);
-		return;
-	}
+//	if ([BrowserWindowControllerExtension enableExtension:&error] == NO) {
+//		NSLog(@"SWMPlugin was NOT loaded: cannot load BrowserWindowControllerExtension\n%@", error);
+//		return;
+//	}
+//	
+//	if ([BrowserDocumentControllerExtension enableExtension:&error] == NO) {
+//		NSLog(@"SWMPlugin was NOT loaded: cannot load BrowserDocumentControllerExtension\n%@", error);
+//		return;
+//	}
+//	
+//	if ([BrowserWindowExtension enableExtension:&error] == NO) {
+//		NSLog(@"SWMPlugin was NOT loaded: cannot load BrowserWindowExtension\n%@", error);
+//		return;
+//	}
+//	
+//	if ([CustomToolBarButtonExtension enableExtension:&error] == NO) {
+//		NSLog(@"SWMPlugin was NOT loaded: cannot load ToolbarControllerExtension\n%@", error);
+//		return;
+//	}
 	
 	NSLog(@"SWMPlugin was loaded");
 }

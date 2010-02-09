@@ -19,11 +19,6 @@ static SWMPluginController* g_sharedPluginContoller = nil;
 @synthesize windowHistory;
 @synthesize maxObjectsInWindowHistory;
 
-@synthesize toolbarButtonIdentifier;
-@synthesize toolbarButton;
-@dynamic toolbarButtonShouldBeInserted;
-@dynamic toolbarButtonIndex;
-
 #pragma mark Singleton
 + (SWMPluginController*)sharedInstance {
 	@synchronized(self) {
@@ -98,22 +93,6 @@ static SWMPluginController* g_sharedPluginContoller = nil;
 	maxObjectsInWindowHistory = newValue;
 }
 
-- (BOOL)toolbarButtonShouldBeInserted {
-	NSLog(@"toolbarButtonShouldBeInserted called");
-	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-	NSDictionary* toolbarConf = [defaults dictionaryForKey:@"NSToolbar Configuration BrowserWindowToolbarIdentifier"];
-	NSArray* itemIdent = [toolbarConf objectForKey:@"TB Item Identifiers"];
-	return [itemIdent containsObject:toolbarButtonIdentifier];
-}
-
-- (NSUInteger)toolbarButtonIndex {
-	NSLog(@"toolbarButtonIndex called");
-	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-	NSDictionary* toolbarConf = [defaults dictionaryForKey:@"NSToolbar Configuration BrowserWindowToolbarIdentifier"];
-	NSArray* itemIdent = [toolbarConf objectForKey:@"TB Item Identifiers"];
-	return [itemIdent indexOfObject:toolbarButtonIdentifier];
-}
-
 - (void)safariWindowWillClose:(BrowserWindow*)closingWindow {
 	NSArray* closingWindowTabs = [(BrowserWindowController*)[closingWindow windowController] orderedTabs];
 	
@@ -138,6 +117,13 @@ static SWMPluginController* g_sharedPluginContoller = nil;
 	if (maxObjectsInWindowHistory < [windowHistory count]) {
 		[windowHistory removeLastObject];
 	}
+}
+
+- (NSButton*)toolbarButton:(BrowserToolbar *)toolbar {
+	return toolbarButton;
+}
+- (NSString*)toolbarButtonIdentifier:(BrowserToolbar *)toolbar {
+	return toolbarButtonIdentifier;
 }
 
 - (void)safariToolbarWillAddItem:(NSNotification*)notification {
