@@ -11,4 +11,5 @@
 @class SWMPluginController;
 
 @interface SWMPluginLoader : NSObject
++ (SWMPluginLoader*)sharedInstance;
 @end

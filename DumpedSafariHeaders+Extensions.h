@@ -8,17 +8,23 @@
  */
 
 #import "DumpedSafariHeaders.h"
-#import "SWMExtending.h"
+#import "Extending.h"
 
-@interface BrowserWindowControllerExtension : NSObject <SWMExtending>
-- (void)SWMCloseTab:(id)arg;
+
+@interface BrowserWindowControllerExtension : NSObject <Extending>
+- (void)SWMCloseTab:(BrowserTabViewItem*)arg;
 - (void)SWMNewTabWithURL:(NSURL*)url;
 @end
 
-@interface BrowserWindowExtension : NSObject <SWMExtending>
+@interface BrowserWindowExtension : NSObject <Extending>
 - (void)SWMCloseWindow;
 @end
 
-@interface BrowserDocumentControllerExtension : NSObject <SWMExtending>
+@interface BrowserDocumentControllerExtension : NSObject <Extending>
 - (void)SWMReOpenDocumnetWithTabs:(NSArray*)tabURLs;
+@end
+
+@interface CustomToolBarButtonExtension : NSObject <Extending>
+- (BrowserToolbarItem*)SWMToolbar:(BrowserToolbar*)toolbar itemForItemIdentifier:(NSString*)identifier willBeInsertedIntoToolbar:(BOOL)willBeInserted;
+- (NSArray*)SWMToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar;
 @end

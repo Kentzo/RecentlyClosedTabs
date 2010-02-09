@@ -19,6 +19,11 @@ static SWMPluginController* g_sharedPluginContoller = nil;
 @synthesize windowHistory;
 @synthesize maxObjectsInWindowHistory;
 
+@synthesize toolbarButtonIdentifier;
+@synthesize toolbarButton;
+@dynamic toolbarButtonShouldBeInserted;
+@dynamic toolbarButtonIndex;
+
 #pragma mark Singleton
 + (SWMPluginController*)sharedInstance {
 	@synchronized(self) {
@@ -53,9 +58,35 @@ static SWMPluginController* g_sharedPluginContoller = nil;
     return self;
 }
 
+#pragma mark Methods
+//+ (void)initialize {
+//	NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+//	NSDictionary* defaultPreferences = [NSDictionary dictionaryWithObjectsAndKeys:
+//										[NSNumber numberWithBool:NO], @"SWM.toolbarButtonShouldBeInserted",
+//										[NSNumber numberWithUnsignedInteger:2], @"SWM.toolbarButtonIndex", nil];
+//	[userDefaults registerDefaults:defaultPreferences];
+//}
+
 - (id)init {
 	if (self = [super init]) {
 		windowHistory = [[NSMutableArray alloc] initWithCapacity:maxObjectsInWindowHistory];
+		toolbarButtonIdentifier = @"SWMToolbarButtonIdentifier";
+		
+		toolbarButton = [NSButton new];
+		[toolbarButton setBezelStyle:NSTexturedRoundedBezelStyle];
+		[toolbarButton setFrameSize:NSMakeSize(28.0f, 25.0f)];
+		[toolbarButton setTitle:@"SWM"];
+		[toolbarButton setAllowsMixedState:NO];
+		[toolbarButton setBordered:YES];
+		[toolbarButton setTransparent:NO];
+		[toolbarButton setShowsBorderOnlyWhileMouseInside:NO];
+		[toolbarButton setIgnoresMultiClick:NO];
+		[toolbarButton setContinuous:NO];
+		[toolbarButton setAutoresizesSubviews:YES];
+		
+//		NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+//		toolbarButtonShouldBeInserted = [defaults boolForKey:@"SWM.toolbarButtonShouldBeInserted"];
+//		toolbarButtonIndex = [defaults integerForKey:@"SWM.toolbarButtonIndex"];
 	}
 	return self;
 }
@@ -65,6 +96,22 @@ static SWMPluginController* g_sharedPluginContoller = nil;
 		self.windowHistory = [NSMutableArray arrayWithArray:[windowHistory subarrayWithRange:NSMakeRange(0, maxObjectsInWindowHistory)]];
 	}
 	maxObjectsInWindowHistory = newValue;
+}
+
+- (BOOL)toolbarButtonShouldBeInserted {
+	NSLog(@"toolbarButtonShouldBeInserted called");
+	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+	NSDictionary* toolbarConf = [defaults dictionaryForKey:@"NSToolbar Configuration BrowserWindowToolbarIdentifier"];
+	NSArray* itemIdent = [toolbarConf objectForKey:@"TB Item Identifiers"];
+	return [itemIdent containsObject:toolbarButtonIdentifier];
+}
+
+- (NSUInteger)toolbarButtonIndex {
+	NSLog(@"toolbarButtonIndex called");
+	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+	NSDictionary* toolbarConf = [defaults dictionaryForKey:@"NSToolbar Configuration BrowserWindowToolbarIdentifier"];
+	NSArray* itemIdent = [toolbarConf objectForKey:@"TB Item Identifiers"];
+	return [itemIdent indexOfObject:toolbarButtonIdentifier];
 }
 
 - (void)safariWindowWillClose:(BrowserWindow*)closingWindow {
@@ -90,6 +137,20 @@ static SWMPluginController* g_sharedPluginContoller = nil;
 	// If limit exceeds, array will remove last object.
 	if (maxObjectsInWindowHistory < [windowHistory count]) {
 		[windowHistory removeLastObject];
+	}
+}
+
+- (void)safariToolbarWillAddItem:(NSNotification*)notification {
+	NSLog(@"%@", [notification userInfo]);
+	if ([[notification valueForKeyPath:@"userInfo.item.itemIdentifier"] isEqualToString:toolbarButtonIdentifier]) {
+		//self.toolbarButtonShouldBeInserted = YES;
+		//self.toolbarButtonIndex = [[notification valueForKeyPath:@"userInfo.newIndex"] intValue];
+	}
+}
+- (void)safariToolbarDidRemoveItem:(NSNotification*)notification {
+	NSLog(@"%@", [notification userInfo]);
+	if ([[notification valueForKeyPath:@"userInfo.item.itemIdentifier"] isEqualToString:toolbarButtonIdentifier]) {
+		//self.toolbarButtonShouldBeInserted = NO;
 	}
 }
 

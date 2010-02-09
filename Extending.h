@@ -7,7 +7,11 @@
  *
  */
 
-@protocol SWMExtending
-+ (BOOL)loadExtension:(NSError**)error;
-+ (void)unloadExtension;
+@protocol Extending
+@required
++ (BOOL)enableExtension:(NSError**)error;
++ (void)disableExtension;
++ (BOOL)isEnabled;
++ (Class)extendedClass;
+
 @end
