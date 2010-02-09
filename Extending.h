@@ -7,11 +7,18 @@
  *
  */
 
-@protocol Extending
+@protocol BaseExtending
 @required
-+ (BOOL)enableExtension:(NSError**)error;
 + (void)disableExtension;
 + (BOOL)isEnabled;
 + (Class)extendedClass;
 
+@end
+
+@protocol DecoratorExtending <BaseExtending>
++ (BOOL)enableExtension:(NSError**)error;
+@end
+
+@protocol DelegateExtending <BaseExtending>
++ (BOOL)enableExtensionWithDelegate:(id<NSObject>)delegate error:(NSError**)error;
 @end
