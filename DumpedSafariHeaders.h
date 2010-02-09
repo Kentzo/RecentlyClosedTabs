@@ -16,7 +16,7 @@ BrowserDocumentController, BrowserDocument, ToolbarController, BrowserToolbar, B
 - (NSInteger)level; // returns layer level of the window. Derived from NSWindow.
 - (BrowserTabViewItem*)currentTabViewItem; // returns selected BrowserTabViewItem object.
 - (void)close; // this method will be called when BrowserWindow closes.
-- (NSResponder *)nextResponder;
+- (BrowserToolbar*)toolbar;
 @end
 
 @interface BrowserWindowController
@@ -52,6 +52,12 @@ BrowserDocumentController, BrowserDocument, ToolbarController, BrowserToolbar, B
 - (BrowserToolbarItem*)toolbar:(BrowserToolbar*)arg1 itemForItemIdentifier:(NSString*)arg2 willBeInsertedIntoToolbar:(BOOL)arg3;
 - (NSArray*)toolbarAllowedItemIdentifiers:(BrowserToolbar*)arg1;
 - (NSArray*)toolbarDefaultItemIdentifiers:(BrowserToolbar*)arg1;
+@end
+
+@interface BrowserToolbar
+- (void)_userInsertItemWithItemIdentifier:(NSString*)arg1 atIndex:(long long)arg2;
+- (void)removeItemWithIdentifier:(id)arg1;
+- (id)valueForKeyPath:(NSString*)path;
 @end
 
 @interface BrowserToolbarItem
