@@ -33,6 +33,8 @@ typedef enum _windowPolicy {
 @interface BrowserWindowController : NSWindowController
 - (NSArray*)orderedTabs; // returns ordered array of tabs.
 - (void)closeTab:(BrowserTabViewItem*)arg1; // this method will be called when any tab are closed.
+- (void)closeTabOrWindow:(id)arg1;
+- (void)_closeWindowIfNoTabs;
 - (BrowserWebView*)createTab; // creates tab and returns it. 
 - (BrowserWindow*)window; // returns window connected to the controller. Derived from NSWindowController.
 - (BrowserDocument*)document; // returns BrowserDocument object which owns this window.
@@ -72,7 +74,6 @@ typedef enum _windowPolicy {
 @interface ToolbarController
 - (BrowserToolbarItem*)toolbar:(BrowserToolbar*)arg1 itemForItemIdentifier:(NSString*)arg2 willBeInsertedIntoToolbar:(BOOL)arg3;
 - (NSArray*)toolbarAllowedItemIdentifiers:(BrowserToolbar*)arg1;
-- (NSArray*)toolbarDefaultItemIdentifiers:(BrowserToolbar*)arg1;
 @end
 
 @interface BrowserToolbar

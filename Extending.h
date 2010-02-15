@@ -16,9 +16,11 @@
 @end
 
 @protocol DecoratorExtending <BaseExtending>
+@required
 + (BOOL)enableExtension:(NSError**)error;
 @end
 
 @protocol DelegateExtending <BaseExtending>
+@required
 + (BOOL)enableExtensionWithDelegate:(id<NSObject>)delegate error:(NSError**)error;
 @end

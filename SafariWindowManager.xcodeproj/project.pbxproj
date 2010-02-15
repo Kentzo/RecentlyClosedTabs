@@ -8,37 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3F4111B500300B738C8 /* JRSwizzle.m */; };
-		E26DE460111B725600B738C8 /* DumpedSafariHeaders+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE45F111B725600B738C8 /* DumpedSafariHeaders+Extensions.m */; };
-		E26DE566111D80C400B738C8 /* NSDictionary+WindowObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE565111D80C400B738C8 /* NSDictionary+WindowObject.m */; };
-		E26DE58B111D89E300B738C8 /* NSDictionary+TabObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE58A111D89E300B738C8 /* NSDictionary+TabObject.m */; };
-		E26DE5B4111DB30100B738C8 /* SWMPluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE5B3111DB30100B738C8 /* SWMPluginController.m */; };
-		E2BFAE7E112177470029689B /* SWMUndoCloseTabExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAE7D112177470029689B /* SWMUndoCloseTabExtension.m */; };
 		E2BFAE81112177640029689B /* UnallocableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAE80112177640029689B /* UnallocableObject.m */; };
 		E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAEF911218A5B0029689B /* Runtime.m */; };
 		E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */; };
+		E2DB74741129B5ED0045EEDA /* SWMToolbarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */; };
+		E2DB75201129C4480045EEDA /* SWMDetectClosingTabExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */; };
 		E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E26DE3F3111B500300B738C8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
 		E26DE3F4111B500300B738C8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
-		E26DE45E111B725600B738C8 /* DumpedSafariHeaders+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DumpedSafariHeaders+Extensions.h"; sourceTree = "<group>"; };
-		E26DE45F111B725600B738C8 /* DumpedSafariHeaders+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DumpedSafariHeaders+Extensions.m"; sourceTree = "<group>"; };
 		E26DE521111D4BC200B738C8 /* Extending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extending.h; sourceTree = "<group>"; };
-		E26DE564111D80C400B738C8 /* NSDictionary+WindowObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WindowObject.h"; sourceTree = "<group>"; };
-		E26DE565111D80C400B738C8 /* NSDictionary+WindowObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WindowObject.m"; sourceTree = "<group>"; };
-		E26DE589111D89E300B738C8 /* NSDictionary+TabObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TabObject.h"; sourceTree = "<group>"; };
-		E26DE58A111D89E300B738C8 /* NSDictionary+TabObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TabObject.m"; sourceTree = "<group>"; };
-		E26DE5B2111DB30100B738C8 /* SWMPluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginController.h; sourceTree = "<group>"; };
-		E26DE5B3111DB30100B738C8 /* SWMPluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginController.m; sourceTree = "<group>"; };
-		E2BFAE7C112177470029689B /* SWMUndoCloseTabExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMUndoCloseTabExtension.h; sourceTree = "<group>"; };
-		E2BFAE7D112177470029689B /* SWMUndoCloseTabExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMUndoCloseTabExtension.m; sourceTree = "<group>"; };
 		E2BFAE7F112177640029689B /* UnallocableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnallocableObject.h; sourceTree = "<group>"; };
 		E2BFAE80112177640029689B /* UnallocableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnallocableObject.m; sourceTree = "<group>"; };
 		E2BFAEF811218A5B0029689B /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
 		E2BFAEF911218A5B0029689B /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
 		E2BFAF37112193DE0029689B /* SWMCustomToolbarButtonExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMCustomToolbarButtonExtension.h; sourceTree = "<group>"; };
 		E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMCustomToolbarButtonExtension.m; sourceTree = "<group>"; };
+		E2DB74721129B5ED0045EEDA /* SWMToolbarButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMToolbarButtonController.h; sourceTree = "<group>"; };
+		E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMToolbarButtonController.m; sourceTree = "<group>"; };
+		E2DB751E1129C4480045EEDA /* SWMDetectClosingTabExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMDetectClosingTabExtension.h; sourceTree = "<group>"; };
+		E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMDetectClosingTabExtension.m; sourceTree = "<group>"; };
 		E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginLoader.h; sourceTree = "<group>"; };
 		E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginLoader.m; sourceTree = "<group>"; };
 		E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpedSafariHeaders.h; sourceTree = "<group>"; };
@@ -66,35 +57,15 @@
 			name = JRSwizzle;
 			sourceTree = "<group>";
 		};
-		E26DE559111D800C00B738C8 /* Safari Headers and Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E26DE45E111B725600B738C8 /* DumpedSafariHeaders+Extensions.h */,
-				E26DE45F111B725600B738C8 /* DumpedSafariHeaders+Extensions.m */,
-			);
-			name = "Safari Headers and Extensions";
-			sourceTree = "<group>";
-		};
-		E26DE561111D808600B738C8 /* Core Objects */ = {
-			isa = PBXGroup;
-			children = (
-				E26DE564111D80C400B738C8 /* NSDictionary+WindowObject.h */,
-				E26DE565111D80C400B738C8 /* NSDictionary+WindowObject.m */,
-				E26DE589111D89E300B738C8 /* NSDictionary+TabObject.h */,
-				E26DE58A111D89E300B738C8 /* NSDictionary+TabObject.m */,
-			);
-			name = "Core Objects";
-			sourceTree = "<group>";
-		};
 		E2BFAE79112177080029689B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				E26DE521111D4BC200B738C8 /* Extending.h */,
 				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
-				E2BFAE7C112177470029689B /* SWMUndoCloseTabExtension.h */,
-				E2BFAE7D112177470029689B /* SWMUndoCloseTabExtension.m */,
 				E2BFAF37112193DE0029689B /* SWMCustomToolbarButtonExtension.h */,
 				E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */,
+				E2DB751E1129C4480045EEDA /* SWMDetectClosingTabExtension.h */,
+				E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -111,6 +82,10 @@
 		E2E26F7E111822A40007B2BF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E2BFAE7F112177640029689B /* UnallocableObject.h */,
+				E2BFAE80112177640029689B /* UnallocableObject.m */,
+				E2BFAEF811218A5B0029689B /* Runtime.h */,
+				E2BFAEF911218A5B0029689B /* Runtime.m */,
 				E2E26FC7111864D00007B2BF /* Plugin */,
 				E26DE3F6111B500800B738C8 /* JRSwizzle */,
 			);
@@ -120,17 +95,11 @@
 		E2E26FC7111864D00007B2BF /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				E2BFAE7F112177640029689B /* UnallocableObject.h */,
-				E2BFAE80112177640029689B /* UnallocableObject.m */,
-				E2BFAEF811218A5B0029689B /* Runtime.h */,
-				E2BFAEF911218A5B0029689B /* Runtime.m */,
 				E2BFAE79112177080029689B /* Extensions */,
-				E26DE561111D808600B738C8 /* Core Objects */,
-				E26DE559111D800C00B738C8 /* Safari Headers and Extensions */,
 				E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */,
 				E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */,
-				E26DE5B2111DB30100B738C8 /* SWMPluginController.h */,
-				E26DE5B3111DB30100B738C8 /* SWMPluginController.m */,
+				E2DB74721129B5ED0045EEDA /* SWMToolbarButtonController.h */,
+				E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -153,6 +122,7 @@
 				E2E26FD9111873A20007B2BF /* Sources */,
 				E2E26FD8111873A20007B2BF /* Resources */,
 				E2E26FDA111873A20007B2BF /* Frameworks */,
+				E2DB74A21129BC280045EEDA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,6 +161,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2DB74A21129BC280045EEDA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl unload \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl unload -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\ncp -rf \"${TARGET_BUILD_DIR}/${TARGET_NAME}.bundle\" $HOME/Library/Application\\ Support/SpiceRack/Spices\n\nif [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl load \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl load -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2E26FD9111873A20007B2BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,14 +184,11 @@
 			files = (
 				E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */,
 				E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */,
-				E26DE460111B725600B738C8 /* DumpedSafariHeaders+Extensions.m in Sources */,
-				E26DE566111D80C400B738C8 /* NSDictionary+WindowObject.m in Sources */,
-				E26DE58B111D89E300B738C8 /* NSDictionary+TabObject.m in Sources */,
-				E26DE5B4111DB30100B738C8 /* SWMPluginController.m in Sources */,
-				E2BFAE7E112177470029689B /* SWMUndoCloseTabExtension.m in Sources */,
 				E2BFAE81112177640029689B /* UnallocableObject.m in Sources */,
 				E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */,
 				E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */,
+				E2DB74741129B5ED0045EEDA /* SWMToolbarButtonController.m in Sources */,
+				E2DB75201129C4480045EEDA /* SWMDetectClosingTabExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "UnallocableObject.h"
 #import "Extending.h"
 
+
 @protocol SWMCustomToolbarButtonExtensionDelegate
 @required
 - (NSButton*)toolbarButton:(BrowserToolbar*)toolbar;
