@@ -24,8 +24,8 @@ static id<SWMCustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtensio
 	g_CustomToolbarButtonExtension_Delegate = delegate;
 	g_CustomToolbarButtonExtension_Enabled = [origClass jr_swizzleMethod:@selector(toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:) 
 													  withMethod:@selector(SWMToolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:) error:error] &&
-									 [origClass jr_swizzleMethod:@selector(toolbarAllowedItemIdentifiers:) 
-													  withMethod:@selector(SWMToolbarAllowedItemIdentifiers:) error:error];
+											[origClass jr_swizzleMethod:@selector(toolbarAllowedItemIdentifiers:) 
+															 withMethod:@selector(SWMToolbarAllowedItemIdentifiers:) error:error];
 	
 	// Get toolbar object
 	NSDocumentController* documentContr = [NSDocumentController sharedDocumentController];
@@ -33,7 +33,7 @@ static id<SWMCustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtensio
 	BrowserToolbar* toolbar = [[windowContr window] toolbar];
 	
 	NSString* itemIdentifier = [g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar];
-	NSAssert(itemIdentifier != nil, @"Cannot get item identifier for current toolbar");
+//	NSAssert(itemIdentifier != nil, @"Cannot get item identifier for current toolbar");
 	
 	// Load toolbar item data from defaults
 	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
@@ -86,8 +86,10 @@ static id<SWMCustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtensio
 			NSButton* SWMButton = [g_CustomToolbarButtonExtension_Delegate toolbarButton:toolbar];
 			SWMToolBarItem = [[NSClassFromString(@"BrowserToolbarItem") alloc] 
 							  initWithItemIdentifier:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]
-							  target:self
+							  target:g_CustomToolbarButtonExtension_Delegate
 							  button:SWMButton];
+			[SWMToolBarItem setAction:[g_CustomToolbarButtonExtension_Delegate toolbarButtonAction:toolbar]];
+			[SWMToolBarItem setToolTip:[g_CustomToolbarButtonExtension_Delegate toolbarButtonToolTip:toolbar]];
 		}
 		
 		// If identifier is equal to identifier in delegate will return our cursom item

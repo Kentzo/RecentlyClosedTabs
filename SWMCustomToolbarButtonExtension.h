@@ -15,6 +15,8 @@
 @required
 - (NSButton*)toolbarButton:(BrowserToolbar*)toolbar;
 - (NSString*)toolbarButtonIdentifier:(BrowserToolbar*)toolbar;
+- (NSString*)toolbarButtonToolTip:(BrowserToolbar*)toolbar;
+- (SEL)toolbarButtonAction:(BrowserToolbar*)toolbar;
 @end
 
 @interface SWMCustomToolbarButtonExtension : UnallocableObject <DelegateExtending>
