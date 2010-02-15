@@ -8,18 +8,29 @@
  */
 
 @class BrowserWindow, BrowserWindowController, BrowserWebView, BrowserTabViewItem, 
-BrowserDocumentController, BrowserDocument, ToolbarController, BrowserToolbar, BrowserToolbarItem;
+BrowserDocumentController, BrowserDocument, ToolbarController, BrowserToolbar, BrowserToolbarItem, TabButton, TabBarView;
 
-@interface BrowserWindow
-- (BrowserWindowController*)windowController; // returns window controller of the window. Derived from NSWindow.
-- (NSRect)frame; // returns frame of the window. Derived from NSWindow.
-- (NSInteger)level; // returns layer level of the window. Derived from NSWindow.
+#pragma mark windowPolicy
+typedef enum _windowPolicy {
+	CurrentTabWindowPolicy = 0, // Either opens URL in the current tab or creates new window, if no windows are existed
+	CurrentTab2WindowPolicy, // Same as CurrentTabWindowPolicy
+	NewWindowWindowPolicy, // Creates new window and opens URL
+	NewWindowBackgroundWindowPolicy, // Creates new window at background and opens URL
+	NewTabWindowPolicy, // Creates new tab at the front window or creates new window, if no windows are existed
+	NewTabBackgroundWindowPolicy, // Creates new tab at the front window, but don't switch to it. Creates new window if no windows are existed
+	LocateOrCreateTabWindowPolicy, // If some window has webview with current url, switch to it and update. Otherwise create new tab or new window
+	LocateOrCreate2TabWindowPolicy // Same as LocateOrCreateTabWindowPolicy
+} windowPolicy;
+
+#pragma mark -
+#pragma mark Windows
+@interface BrowserWindow : NSWindow
 - (BrowserTabViewItem*)currentTabViewItem; // returns selected BrowserTabViewItem object.
 - (void)close; // this method will be called when BrowserWindow closes.
 - (BrowserToolbar*)toolbar;
 @end
 
-@interface BrowserWindowController
+@interface BrowserWindowController : NSWindowController
 - (NSArray*)orderedTabs; // returns ordered array of tabs.
 - (void)closeTab:(BrowserTabViewItem*)arg1; // this method will be called when any tab are closed.
 - (BrowserWebView*)createTab; // creates tab and returns it. 
@@ -27,27 +38,37 @@ BrowserDocumentController, BrowserDocument, ToolbarController, BrowserToolbar, B
 - (BrowserDocument*)document; // returns BrowserDocument object which owns this window.
 @end
 
+#pragma mark -
+#pragma mark Web Views
 @interface BrowserWebView
 - (NSString*)currentTitle;
 - (NSURL*)currentURL;
 - (void)goToURL:(NSURL*)arg1;
 - (NSUndoManager*)undoManagerForWebView:(BrowserWebView*)arg1;
+//- (void)goToAddressInNewWindow:(id)arg1;
+//- (void)openFrameInNewWindow:(id)arg1;
+//- (void)openImageInNewWindow:(id)arg1;
+//- (void)openLinkInNewWindow:(id)arg1;
+//- (void)openURLInNewWindow:(id)arg1;
+
 @end
 
-@interface BrowserTabViewItem
-- (BrowserWebView*)webView;
-@end
-
-@interface BrowserDocument
+#pragma mark -
+#pragma mark Documents
+@interface BrowserDocument : NSDocument
 - (BrowserWindowController*)browserWindowController;
 - (NSUndoManager*)undoManager;
+- (void)goToURL:(id)arg1;
 @end
 
-@interface BrowserDocumentController
+@interface BrowserDocumentController : NSDocumentController
 - (BrowserDocument*)openEmptyBrowserDocument;
 - (void)SWMReOpenDocumnetWithTabs:(NSArray*)tabURLs;
+- (id)goToURL:(id)arg1 windowPolicy:(int)arg2;
 @end
 
+#pragma mark -
+#pragma mark Toolbars
 @interface ToolbarController
 - (BrowserToolbarItem*)toolbar:(BrowserToolbar*)arg1 itemForItemIdentifier:(NSString*)arg2 willBeInsertedIntoToolbar:(BOOL)arg3;
 - (NSArray*)toolbarAllowedItemIdentifiers:(BrowserToolbar*)arg1;
@@ -63,4 +84,26 @@ BrowserDocumentController, BrowserDocument, ToolbarController, BrowserToolbar, B
 @interface BrowserToolbarItem
 - (id)initWithItemIdentifier:(id)arg1 target:(id)arg2 button:(id)arg3;
 + (id)alloc;
+- (void)setToolTip:(NSString *)toolTip;
+- (void)setAction:(SEL)action;
 @end
+
+#pragma mark -
+#pragma mark Tab Bars
+@interface TabButton : NSButton
+- (void)mouseDown:(NSEvent *)theEvent;
+- (BrowserTabViewItem*)tabViewItem;
+- (void)closeTab:(id)arg1;
+- (TabBarView*)superview;
+@end
+
+@interface TabBarView : NSView
+- (unsigned long long)numberOfTabs;
+@end
+
+@interface BrowserTabViewItem 
+- (BrowserWebView*)webView;
+- (NSString*)title;
+- (NSString*)URLString;
+@end
+
