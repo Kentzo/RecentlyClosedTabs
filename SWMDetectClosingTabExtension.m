@@ -54,8 +54,7 @@ static id<SWMDetectClosingTabExtensionDelegate> g_DetectClosingTabExtension_Dele
 	}
 	[self SWMCloseTab:arg1];
 }
-- (void)SWMWindowWillClose:(id)arg1 {
-	NSLog(@"%@", [[arg1 object] currentTabViewItem]);
+- (void)SWMWindowWillClose:(BrowserWindow*)arg1 {
 	if (g_DetectClosingTabExtension_Enabled) {
 		NSLog(@"SWMCloseTabOrWindow");
 	}
