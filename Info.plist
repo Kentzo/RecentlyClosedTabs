@@ -17,9 +17,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0</string>
 	<key>CFBundleName</key>
-	<string>SafariWindowManager</string>
+	<string>RecentlyClosedTabs</string>
 	<key>NSPrincipalClass</key>
 	<string>SWMPluginLoader</string>
 	<key>SpiceRack</key>

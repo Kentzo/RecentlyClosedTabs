@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20BD99A11302A3600FA2031 /* ToolbarButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E20BD99911302A3600FA2031 /* ToolbarButtonIcon.png */; };
 		E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3F4111B500300B738C8 /* JRSwizzle.m */; };
+		E28A70F2112ECF3200029908 /* NSArray+CWSortedInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */; };
 		E2BFAE81112177640029689B /* UnallocableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAE80112177640029689B /* UnallocableObject.m */; };
 		E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAEF911218A5B0029689B /* Runtime.m */; };
 		E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */; };
 		E2DB74741129B5ED0045EEDA /* SWMToolbarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */; };
 		E2DB75201129C4480045EEDA /* SWMDetectClosingTabExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */; };
+		E2DB756D112A99510045EEDA /* RecentClosedTabsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DB756C112A99510045EEDA /* RecentClosedTabsWindow.xib */; };
+		E2DB7572112A9AB80045EEDA /* SWMRecentClosedTabsWindowContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7571112A9AB80045EEDA /* SWMRecentClosedTabsWindowContoller.m */; };
+		E2DB7576112A9B150045EEDA /* SWMClosedTab.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7575112A9B150045EEDA /* SWMClosedTab.m */; };
 		E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E20BD99911302A3600FA2031 /* ToolbarButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolbarButtonIcon.png; sourceTree = "<group>"; };
 		E26DE3F3111B500300B738C8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
 		E26DE3F4111B500300B738C8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
 		E26DE521111D4BC200B738C8 /* Extending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extending.h; sourceTree = "<group>"; };
+		E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CWSortedInsert.m"; sourceTree = "<group>"; };
+		E28A70F1112ECF3200029908 /* NSArray+CWSortedInsert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CWSortedInsert.h"; sourceTree = "<group>"; };
 		E2BFAE7F112177640029689B /* UnallocableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnallocableObject.h; sourceTree = "<group>"; };
 		E2BFAE80112177640029689B /* UnallocableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnallocableObject.m; sourceTree = "<group>"; };
 		E2BFAEF811218A5B0029689B /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
@@ -30,10 +38,15 @@
 		E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMToolbarButtonController.m; sourceTree = "<group>"; };
 		E2DB751E1129C4480045EEDA /* SWMDetectClosingTabExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMDetectClosingTabExtension.h; sourceTree = "<group>"; };
 		E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMDetectClosingTabExtension.m; sourceTree = "<group>"; };
+		E2DB756C112A99510045EEDA /* RecentClosedTabsWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentClosedTabsWindow.xib; sourceTree = "<group>"; };
+		E2DB7570112A9AB80045EEDA /* SWMRecentClosedTabsWindowContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMRecentClosedTabsWindowContoller.h; sourceTree = "<group>"; };
+		E2DB7571112A9AB80045EEDA /* SWMRecentClosedTabsWindowContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMRecentClosedTabsWindowContoller.m; sourceTree = "<group>"; };
+		E2DB7574112A9B150045EEDA /* SWMClosedTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMClosedTab.h; sourceTree = "<group>"; };
+		E2DB7575112A9B150045EEDA /* SWMClosedTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMClosedTab.m; sourceTree = "<group>"; };
 		E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginLoader.h; sourceTree = "<group>"; };
 		E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginLoader.m; sourceTree = "<group>"; };
 		E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpedSafariHeaders.h; sourceTree = "<group>"; };
-		E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariWindowManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E26FDC111873A20007B2BF /* RecentlyClosedTabs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecentlyClosedTabs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E26FDE111873A20007B2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +70,15 @@
 			name = JRSwizzle;
 			sourceTree = "<group>";
 		};
+		E28A70F3112ECF3700029908 /* CWSortedInsert */ = {
+			isa = PBXGroup;
+			children = (
+				E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */,
+				E28A70F1112ECF3200029908 /* NSArray+CWSortedInsert.h */,
+			);
+			name = CWSortedInsert;
+			sourceTree = "<group>";
+		};
 		E2BFAE79112177080029689B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +92,20 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		E2DB756B112A99360045EEDA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E20BD99911302A3600FA2031 /* ToolbarButtonIcon.png */,
+				E2DB756C112A99510045EEDA /* RecentClosedTabsWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E2E26F6B1118227A0007B2BF = {
 			isa = PBXGroup;
 			children = (
 				E2E26F7E111822A40007B2BF /* Sources */,
+				E2DB756B112A99360045EEDA /* Resources */,
 				E2E26FDD111873A20007B2BF /* Products */,
 				E2E26FDE111873A20007B2BF /* Info.plist */,
 			);
@@ -87,6 +119,7 @@
 				E2BFAEF811218A5B0029689B /* Runtime.h */,
 				E2BFAEF911218A5B0029689B /* Runtime.m */,
 				E2E26FC7111864D00007B2BF /* Plugin */,
+				E28A70F3112ECF3700029908 /* CWSortedInsert */,
 				E26DE3F6111B500800B738C8 /* JRSwizzle */,
 			);
 			name = Sources;
@@ -100,6 +133,10 @@
 				E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */,
 				E2DB74721129B5ED0045EEDA /* SWMToolbarButtonController.h */,
 				E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */,
+				E2DB7570112A9AB80045EEDA /* SWMRecentClosedTabsWindowContoller.h */,
+				E2DB7571112A9AB80045EEDA /* SWMRecentClosedTabsWindowContoller.m */,
+				E2DB7574112A9B150045EEDA /* SWMClosedTab.h */,
+				E2DB7575112A9B150045EEDA /* SWMClosedTab.m */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -107,7 +144,7 @@
 		E2E26FDD111873A20007B2BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */,
+				E2E26FDC111873A20007B2BF /* RecentlyClosedTabs.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2E26FDB111873A20007B2BF /* SafariWindowManager */ = {
+		E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2E26FE1111873A30007B2BF /* Build configuration list for PBXNativeTarget "SafariWindowManager" */;
+			buildConfigurationList = E2E26FE1111873A30007B2BF /* Build configuration list for PBXNativeTarget "RecentlyClosedTabs" */;
 			buildPhases = (
 				E2E26FD9111873A20007B2BF /* Sources */,
 				E2E26FD8111873A20007B2BF /* Resources */,
@@ -128,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = SafariWindowManager;
+			name = RecentlyClosedTabs;
 			productName = SafariWindowManager;
-			productReference = E2E26FDC111873A20007B2BF /* SafariWindowManager.bundle */;
+			productReference = E2E26FDC111873A20007B2BF /* RecentlyClosedTabs.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +175,7 @@
 /* Begin PBXProject section */
 		E2E26F6D1118227A0007B2BF /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "SafariWindowManager" */;
+			buildConfigurationList = E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "RecentlyClosedTabs" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
 			mainGroup = E2E26F6B1118227A0007B2BF;
@@ -146,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E2E26FDB111873A20007B2BF /* SafariWindowManager */,
+				E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +193,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DB756D112A99510045EEDA /* RecentClosedTabsWindow.xib in Resources */,
+				E20BD99A11302A3600FA2031 /* ToolbarButtonIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +228,9 @@
 				E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */,
 				E2DB74741129B5ED0045EEDA /* SWMToolbarButtonController.m in Sources */,
 				E2DB75201129C4480045EEDA /* SWMDetectClosingTabExtension.m in Sources */,
+				E2DB7572112A9AB80045EEDA /* SWMRecentClosedTabsWindowContoller.m in Sources */,
+				E2DB7576112A9B150045EEDA /* SWMClosedTab.m in Sources */,
+				E28A70F2112ECF3200029908 /* NSArray+CWSortedInsert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +283,7 @@
 					AppKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = SafariWindowManager;
+				PRODUCT_NAME = RecentlyClosedTabs;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -265,7 +307,7 @@
 					AppKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = SafariWindowManager;
+				PRODUCT_NAME = RecentlyClosedTabs;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -274,7 +316,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "SafariWindowManager" */ = {
+		E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "RecentlyClosedTabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2E26F6E1118227A0007B2BF /* Debug */,
@@ -283,7 +325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2E26FE1111873A30007B2BF /* Build configuration list for PBXNativeTarget "SafariWindowManager" */ = {
+		E2E26FE1111873A30007B2BF /* Build configuration list for PBXNativeTarget "RecentlyClosedTabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2E26FDF111873A30007B2BF /* Debug */,
