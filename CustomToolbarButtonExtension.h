@@ -12,7 +12,7 @@
 #import "Extending.h"
 
 
-@protocol SWMCustomToolbarButtonExtensionDelegate
+@protocol CustomToolbarButtonExtensionDelegate
 @required
 - (NSButton*)toolbarButton:(BrowserToolbar*)toolbar;
 - (NSString*)toolbarButtonIdentifier:(BrowserToolbar*)toolbar;
@@ -20,7 +20,7 @@
 - (SEL)toolbarButtonAction:(BrowserToolbar*)toolbar;
 @end
 
-@interface SWMCustomToolbarButtonExtension : UnallocableObject <DelegateExtending>
+@interface CustomToolbarButtonExtension : UnallocableObject <DelegateExtending>
 - (BrowserToolbarItem*)SWMToolbar:(BrowserToolbar*)toolbar itemForItemIdentifier:(NSString*)identifier willBeInsertedIntoToolbar:(BOOL)willBeInserted;
 - (NSArray*)SWMToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar;
 @end

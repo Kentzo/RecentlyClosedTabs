@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 
-@interface SWMPluginLoader : NSObject
-+ (SWMPluginLoader*)sharedInstance;
+@interface RCTPluginMain : NSObject
++ (RCTPluginMain*)sharedInstance;
 @end

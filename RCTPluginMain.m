@@ -6,27 +6,27 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "SWMPluginLoader.h"
-#import "SWMCustomToolbarButtonExtension.h"
-#import "SWMToolbarButtonController.h"
+#import "RCTPluginMain.h"
+#import "CustomToolbarButtonExtension.h"
+#import "RCTToolbarButtonController.h"
 
-static SWMPluginLoader* g_sharedPluginLoader = nil;
+static RCTPluginMain* g_sharedPluginLoader = nil;
 
-@implementation SWMPluginLoader
+@implementation RCTPluginMain
 
 + (void)load {
 	NSError* error = nil;
 	
 	
-	SWMToolbarButtonController* toolbarButtonController = [SWMToolbarButtonController new];
-	if (![SWMCustomToolbarButtonExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
+	RCTToolbarButtonController* toolbarButtonController = [RCTToolbarButtonController new];
+	if (![CustomToolbarButtonExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
 		NSLog(@"SWMCustomToolbarButtonExtension was not loaded: %@", error);
 	}
 	else {
 		NSLog(@"SWMCustomToolbarButtonExtension was loaded");
 	}
 	
-	if (![SWMDetectClosingTabExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
+	if (![DetectClosingTabExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
 		NSLog(@"SWMDetectClosingTabExtension was not loaded: %@", error);
 	}
 	else {
@@ -36,7 +36,7 @@ static SWMPluginLoader* g_sharedPluginLoader = nil;
 }
 
 #pragma mark Singleton
-+ (SWMPluginLoader*)sharedInstance {
++ (RCTPluginMain*)sharedInstance {
 	@synchronized(self) {
 		if (g_sharedPluginLoader == nil) {
 			g_sharedPluginLoader = [SWMPluginLoader new];

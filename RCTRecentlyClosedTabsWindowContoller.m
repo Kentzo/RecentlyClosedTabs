@@ -6,17 +6,17 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "SWMRecentlyClosedTabsWindowContoller.h"
-#import "SWMClosedTab.h"
+#import "RCTRecentlyClosedTabsWindowContoller.h"
+#import "RCTClosedTab.h"
 #import "DumpedSafariHeaders.h"
 #import "NSArray+CWSortedInsert.h"
 
 
-@interface SWMRecentlyClosedTabsWindowContoller (Private)
+@interface RCTRecentlyClosedTabsWindowContoller (Private)
 - (void)goToURL:(NSURL*)url;
 @end
 
-@implementation SWMRecentlyClosedTabsWindowContoller
+@implementation RCTRecentlyClosedTabsWindowContoller
 @synthesize closedTabs;
 @synthesize closedTabsController;
 @synthesize tableView;
@@ -65,7 +65,7 @@
 	return [[closedTabsController filterPredicate] predicateFormat];
 }
 
-- (void)addClosedTab:(SWMClosedTab*)closedTab {
+- (void)addClosedTab:(RCTClosedTab*)closedTab {
 	[closedTabsController removeObject:closedTab];
     NSMutableArray* contentProxy = [self mutableArrayValueForKey:@"closedTabs"];
     [contentProxy insertObject:closedTab sortedUsingDescriptors:[closedTabsController sortDescriptors]];
@@ -89,7 +89,7 @@
 
 @end
                                     
-@implementation SWMRecentlyClosedTabsWindowContoller (Private)
+@implementation RCTRecentlyClosedTabsWindowContoller (Private)
 - (void)goToURL:(NSURL*)url {
     BrowserDocumentController* documentController = [NSClassFromString(@"BrowserDocumentController") sharedDocumentController];
     [documentController goToURL:url windowPolicy:NewTabWindowPolicy];

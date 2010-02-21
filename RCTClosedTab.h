@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface SWMClosedTab : NSObject {
+@interface RCTClosedTab : NSObject {
 	NSDate* closingTime;
 	NSString* title;
 	NSURL* url;

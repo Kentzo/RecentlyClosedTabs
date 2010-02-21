@@ -9,9 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 
-@class SWMClosedTab;
+@class RCTClosedTab;
 
-@interface SWMRecentlyClosedTabsWindowContoller : NSWindowController <NSTableViewDataSource> {
+@interface RCTRecentlyClosedTabsWindowContoller : NSWindowController <NSTableViewDataSource> {
 	NSMutableArray* closedTabs;
 	IBOutlet NSArrayController* closedTabsController;
 	IBOutlet NSTableView* tableView;
@@ -21,7 +21,7 @@
 @property (retain) NSTableView* tableView;
 @property (copy) NSString* filterString;
 
-- (void)addClosedTab:(SWMClosedTab*)closedTab;
+- (void)addClosedTab:(RCTClosedTab*)closedTab;
 - (void)tableDoubleClick:(id)sender;
 
 @end

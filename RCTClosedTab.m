@@ -6,10 +6,10 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "SWMClosedTab.h"
+#import "RCTClosedTab.h"
 
 
-@implementation SWMClosedTab
+@implementation RCTClosedTab
 @synthesize closingTime;
 @synthesize title;
 @synthesize url;
@@ -33,7 +33,7 @@
 	[super dealloc];
 }
 
-- (BOOL)isEqual:(SWMClosedTab*)object {
+- (BOOL)isEqual:(RCTClosedTab*)object {
 	return [self.url isEqual:object.url];
 }
 

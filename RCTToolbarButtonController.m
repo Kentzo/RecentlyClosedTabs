@@ -6,13 +6,13 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "SWMToolbarButtonController.h"
-#import "SWMDetectClosingTabExtension.h"
-#import "SWMRecentlyClosedTabsWindowContoller.h"
-#import "SWMClosedTab.h"
+#import "RCTToolbarButtonController.h"
+#import "DetectClosingTabExtension.h"
+#import "RCTRecentlyClosedTabsWindowContoller.h"
+#import "RCTClosedTab.h"
 
 
-@implementation SWMToolbarButtonController
+@implementation RCTToolbarButtonController
 
 - init {
 	if (self = [super init]) {
@@ -33,7 +33,7 @@
 		[toolbarButton setContinuous:NO];
 		[toolbarButton setAutoresizesSubviews:YES];
 		
-		recentClosedTabsWindowController = [[SWMRecentlyClosedTabsWindowContoller alloc] init];
+		recentClosedTabsWindowController = [[RCTRecentlyClosedTabsWindowContoller alloc] init];
 		
 		[toolbarButtonIcon release];
 	}
@@ -78,7 +78,7 @@
 		NSURL* url = [browserWebView currentURL];
 		NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];
 		if (url != nil && ![url isEqual:emptyurl] && ![url isEqual:bookmarks] && ![url isEqual:topsites]) {
-			SWMClosedTab* tab = [[SWMClosedTab alloc] initWithTitle:title url:url date:date favicon:nil];
+			RCTClosedTab* tab = [[RCTClosedTab alloc] initWithTitle:title url:url date:date favicon:nil];
 			[recentClosedTabsWindowController addClosedTab:tab];
 			[tab release];
 		}

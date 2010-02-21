@@ -6,17 +6,17 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "SWMCustomToolbarButtonExtension.h"
+#import "CustomToolbarButtonExtension.h"
 #import "JRSwizzle.h"
 #import "Runtime.h"
 
-@implementation SWMCustomToolbarButtonExtension
+@implementation CustomToolbarButtonExtension
 
 static BOOL g_CustomToolbarButtonExtension_Enabled = NO;
-static id<SWMCustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_Delegate = nil;
+static id<CustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_Delegate = nil;
 
 #pragma mark Extending
-+ (BOOL)enableExtensionWithDelegate:(id<NSObject, SWMCustomToolbarButtonExtensionDelegate>)delegate error:(NSError**)error {
++ (BOOL)enableExtensionWithDelegate:(id<NSObject, CustomToolbarButtonExtensionDelegate>)delegate error:(NSError**)error {
 	static BOOL g_CustomToolbarButtonExtension_Initialized = NO;
 	if (!g_CustomToolbarButtonExtension_Initialized) {
 		Class origClass = [self extendedClass];

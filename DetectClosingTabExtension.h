@@ -12,12 +12,12 @@
 #import "Extending.h"
 
 
-@protocol SWMDetectClosingTabExtensionDelegate
+@protocol DetectClosingTabExtensionDelegate
 @required
 - (void)browserDocument:(BrowserDocument*)document willCloseBrowserWebView:(BrowserWebView*)browserWebView;
 @end
 
-@interface SWMDetectClosingTabExtension : UnallocableObject <DelegateExtending>
+@interface DetectClosingTabExtension : UnallocableObject <DelegateExtending>
 - (void)SWMCloseTab:(BrowserTabViewItem*)arg1;
 - (void)SWMWindowWillClose:(NSNotification*)arg1;
 @end

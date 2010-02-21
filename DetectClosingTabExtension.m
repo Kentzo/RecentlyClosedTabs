@@ -6,17 +6,17 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "SWMDetectClosingTabExtension.h"
+#import "DetectClosingTabExtension.h"
 #import "JRSwizzle.h"
 #import "Runtime.h"
 
 
-@implementation SWMDetectClosingTabExtension
+@implementation DetectClosingTabExtension
 
 static BOOL g_DetectClosingTabExtension_Enabled = NO;
-static id<SWMDetectClosingTabExtensionDelegate> g_DetectClosingTabExtension_Delegate = nil;
+static id<DetectClosingTabExtensionDelegate> g_DetectClosingTabExtension_Delegate = nil;
 
-+ (BOOL)enableExtensionWithDelegate:(id<NSObject, SWMDetectClosingTabExtensionDelegate>)delegate error:(NSError**)error {
++ (BOOL)enableExtensionWithDelegate:(id<NSObject, DetectClosingTabExtensionDelegate>)delegate error:(NSError**)error {
 	static BOOL s_DetectClosingTabExtension_Initialized = NO;
 	if (!s_DetectClosingTabExtension_Initialized) {
 		Class origClass = [self extendedClass];
