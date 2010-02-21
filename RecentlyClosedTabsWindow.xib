@@ -29,7 +29,7 @@
 		<object class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSCustomObject" id="1001">
-				<string key="NSClassName">SWMRecentlyClosedTabsWindowContoller</string>
+				<string key="NSClassName">RCTRecentlyClosedTabsWindowContoller</string>
 			</object>
 			<object class="NSCustomObject" id="1003">
 				<string key="NSClassName">FirstResponder</string>
@@ -402,7 +402,7 @@
 					<string>url</string>
 					<string>favicon</string>
 				</object>
-				<string key="NSObjectClassName">SWMClosedTab</string>
+				<string key="NSObjectClassName">RCTClosedTab</string>
 				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
 				<bool key="NSAvoidsEmptySelection">YES</bool>
 				<bool key="NSPreservesSelection">YES</bool>
@@ -803,7 +803,7 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">SWMRecentlyClosedTabsWindowContoller</string>
+					<string key="className">RCTRecentlyClosedTabsWindowContoller</string>
 					<string key="superclassName">NSWindowController</string>
 					<object class="NSMutableDictionary" key="actions">
 						<string key="NS.key.0">tableDoubleClick:</string>

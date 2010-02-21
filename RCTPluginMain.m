@@ -17,12 +17,22 @@ static SWMPluginLoader* g_sharedPluginLoader = nil;
 + (void)load {
 	NSError* error = nil;
 	
-	if (![SWMCustomToolbarButtonExtension enableExtensionWithDelegate:[SWMToolbarButtonController new] error:&error]) {
-		NSLog(@"SWMPlugin was not loaded: %@", error);
+	
+	SWMToolbarButtonController* toolbarButtonController = [SWMToolbarButtonController new];
+	if (![SWMCustomToolbarButtonExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
+		NSLog(@"SWMCustomToolbarButtonExtension was not loaded: %@", error);
 	}
 	else {
-		NSLog(@"SWMPlugin was loaded");
+		NSLog(@"SWMCustomToolbarButtonExtension was loaded");
 	}
+	
+	if (![SWMDetectClosingTabExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
+		NSLog(@"SWMDetectClosingTabExtension was not loaded: %@", error);
+	}
+	else {
+		NSLog(@"SWMDetectClosingTabExtension was loaded");
+	}
+	
 }
 
 #pragma mark Singleton

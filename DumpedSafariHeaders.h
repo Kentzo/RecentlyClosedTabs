@@ -28,6 +28,7 @@ typedef enum _windowPolicy {
 - (BrowserTabViewItem*)currentTabViewItem; // returns selected BrowserTabViewItem object.
 - (void)close; // this method will be called when BrowserWindow closes.
 - (BrowserToolbar*)toolbar;
+- (id)orderedTabViewItems;
 @end
 
 @interface BrowserWindowController : NSWindowController
@@ -47,6 +48,8 @@ typedef enum _windowPolicy {
 - (NSURL*)currentURL;
 - (void)goToURL:(NSURL*)arg1;
 - (NSUndoManager*)undoManagerForWebView:(BrowserWebView*)arg1;
+- (BrowserDocument*)document;
+- (BOOL)isLoading;
 //- (void)goToAddressInNewWindow:(id)arg1;
 //- (void)openFrameInNewWindow:(id)arg1;
 //- (void)openImageInNewWindow:(id)arg1;

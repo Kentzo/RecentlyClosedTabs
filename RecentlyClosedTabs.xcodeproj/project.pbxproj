@@ -12,13 +12,13 @@
 		E28A70F2112ECF3200029908 /* NSArray+CWSortedInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */; };
 		E2BFAE81112177640029689B /* UnallocableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAE80112177640029689B /* UnallocableObject.m */; };
 		E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAEF911218A5B0029689B /* Runtime.m */; };
-		E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */; };
-		E2DB74741129B5ED0045EEDA /* SWMToolbarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */; };
-		E2DB75201129C4480045EEDA /* SWMDetectClosingTabExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */; };
+		E2BFAF39112193DE0029689B /* CustomToolbarButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAF38112193DE0029689B /* CustomToolbarButtonExtension.m */; };
+		E2DB74741129B5ED0045EEDA /* RCTToolbarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */; };
+		E2DB75201129C4480045EEDA /* DetectClosingTabExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB751F1129C4480045EEDA /* DetectClosingTabExtension.m */; };
 		E2DB756D112A99510045EEDA /* RecentlyClosedTabsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DB756C112A99510045EEDA /* RecentlyClosedTabsWindow.xib */; };
-		E2DB7572112A9AB80045EEDA /* SWMRecentlyClosedTabsWindowContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7571112A9AB80045EEDA /* SWMRecentlyClosedTabsWindowContoller.m */; };
-		E2DB7576112A9B150045EEDA /* SWMClosedTab.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7575112A9B150045EEDA /* SWMClosedTab.m */; };
-		E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */; };
+		E2DB7572112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7571112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.m */; };
+		E2DB7576112A9B150045EEDA /* RCTClosedTab.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7575112A9B150045EEDA /* RCTClosedTab.m */; };
+		E2E26FE2111873D10007B2BF /* RCTPluginMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E26FC9111864E10007B2BF /* RCTPluginMain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,19 +32,19 @@
 		E2BFAE80112177640029689B /* UnallocableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnallocableObject.m; sourceTree = "<group>"; };
 		E2BFAEF811218A5B0029689B /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
 		E2BFAEF911218A5B0029689B /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
-		E2BFAF37112193DE0029689B /* SWMCustomToolbarButtonExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMCustomToolbarButtonExtension.h; sourceTree = "<group>"; };
-		E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMCustomToolbarButtonExtension.m; sourceTree = "<group>"; };
-		E2DB74721129B5ED0045EEDA /* SWMToolbarButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMToolbarButtonController.h; sourceTree = "<group>"; };
-		E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMToolbarButtonController.m; sourceTree = "<group>"; };
-		E2DB751E1129C4480045EEDA /* SWMDetectClosingTabExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMDetectClosingTabExtension.h; sourceTree = "<group>"; };
-		E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMDetectClosingTabExtension.m; sourceTree = "<group>"; };
+		E2BFAF37112193DE0029689B /* CustomToolbarButtonExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomToolbarButtonExtension.h; sourceTree = "<group>"; };
+		E2BFAF38112193DE0029689B /* CustomToolbarButtonExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomToolbarButtonExtension.m; sourceTree = "<group>"; };
+		E2DB74721129B5ED0045EEDA /* RCTToolbarButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTToolbarButtonController.h; sourceTree = "<group>"; };
+		E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTToolbarButtonController.m; sourceTree = "<group>"; };
+		E2DB751E1129C4480045EEDA /* DetectClosingTabExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectClosingTabExtension.h; sourceTree = "<group>"; };
+		E2DB751F1129C4480045EEDA /* DetectClosingTabExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectClosingTabExtension.m; sourceTree = "<group>"; };
 		E2DB756C112A99510045EEDA /* RecentlyClosedTabsWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyClosedTabsWindow.xib; sourceTree = "<group>"; };
-		E2DB7570112A9AB80045EEDA /* SWMRecentlyClosedTabsWindowContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMRecentlyClosedTabsWindowContoller.h; sourceTree = "<group>"; };
-		E2DB7571112A9AB80045EEDA /* SWMRecentlyClosedTabsWindowContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMRecentlyClosedTabsWindowContoller.m; sourceTree = "<group>"; };
-		E2DB7574112A9B150045EEDA /* SWMClosedTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMClosedTab.h; sourceTree = "<group>"; };
-		E2DB7575112A9B150045EEDA /* SWMClosedTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMClosedTab.m; sourceTree = "<group>"; };
-		E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMPluginLoader.h; sourceTree = "<group>"; };
-		E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMPluginLoader.m; sourceTree = "<group>"; };
+		E2DB7570112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRecentlyClosedTabsWindowContoller.h; sourceTree = "<group>"; };
+		E2DB7571112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTRecentlyClosedTabsWindowContoller.m; sourceTree = "<group>"; };
+		E2DB7574112A9B150045EEDA /* RCTClosedTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTClosedTab.h; sourceTree = "<group>"; };
+		E2DB7575112A9B150045EEDA /* RCTClosedTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTClosedTab.m; sourceTree = "<group>"; };
+		E2E26FC8111864E10007B2BF /* RCTPluginMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTPluginMain.h; sourceTree = "<group>"; };
+		E2E26FC9111864E10007B2BF /* RCTPluginMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTPluginMain.m; sourceTree = "<group>"; };
 		E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpedSafariHeaders.h; sourceTree = "<group>"; };
 		E2E26FDC111873A20007B2BF /* RecentlyClosedTabs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecentlyClosedTabs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E26FDE111873A20007B2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,10 +84,10 @@
 			children = (
 				E26DE521111D4BC200B738C8 /* Extending.h */,
 				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
-				E2BFAF37112193DE0029689B /* SWMCustomToolbarButtonExtension.h */,
-				E2BFAF38112193DE0029689B /* SWMCustomToolbarButtonExtension.m */,
-				E2DB751E1129C4480045EEDA /* SWMDetectClosingTabExtension.h */,
-				E2DB751F1129C4480045EEDA /* SWMDetectClosingTabExtension.m */,
+				E2BFAF37112193DE0029689B /* CustomToolbarButtonExtension.h */,
+				E2BFAF38112193DE0029689B /* CustomToolbarButtonExtension.m */,
+				E2DB751E1129C4480045EEDA /* DetectClosingTabExtension.h */,
+				E2DB751F1129C4480045EEDA /* DetectClosingTabExtension.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -129,14 +129,14 @@
 			isa = PBXGroup;
 			children = (
 				E2BFAE79112177080029689B /* Extensions */,
-				E2E26FC8111864E10007B2BF /* SWMPluginLoader.h */,
-				E2E26FC9111864E10007B2BF /* SWMPluginLoader.m */,
-				E2DB74721129B5ED0045EEDA /* SWMToolbarButtonController.h */,
-				E2DB74731129B5ED0045EEDA /* SWMToolbarButtonController.m */,
-				E2DB7570112A9AB80045EEDA /* SWMRecentlyClosedTabsWindowContoller.h */,
-				E2DB7571112A9AB80045EEDA /* SWMRecentlyClosedTabsWindowContoller.m */,
-				E2DB7574112A9B150045EEDA /* SWMClosedTab.h */,
-				E2DB7575112A9B150045EEDA /* SWMClosedTab.m */,
+				E2E26FC8111864E10007B2BF /* RCTPluginMain.h */,
+				E2E26FC9111864E10007B2BF /* RCTPluginMain.m */,
+				E2DB74721129B5ED0045EEDA /* RCTToolbarButtonController.h */,
+				E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */,
+				E2DB7570112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.h */,
+				E2DB7571112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.m */,
+				E2DB7574112A9B150045EEDA /* RCTClosedTab.h */,
+				E2DB7575112A9B150045EEDA /* RCTClosedTab.m */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -221,15 +221,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2E26FE2111873D10007B2BF /* SWMPluginLoader.m in Sources */,
+				E2E26FE2111873D10007B2BF /* RCTPluginMain.m in Sources */,
 				E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */,
 				E2BFAE81112177640029689B /* UnallocableObject.m in Sources */,
 				E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */,
-				E2BFAF39112193DE0029689B /* SWMCustomToolbarButtonExtension.m in Sources */,
-				E2DB74741129B5ED0045EEDA /* SWMToolbarButtonController.m in Sources */,
-				E2DB75201129C4480045EEDA /* SWMDetectClosingTabExtension.m in Sources */,
-				E2DB7572112A9AB80045EEDA /* SWMRecentlyClosedTabsWindowContoller.m in Sources */,
-				E2DB7576112A9B150045EEDA /* SWMClosedTab.m in Sources */,
+				E2BFAF39112193DE0029689B /* CustomToolbarButtonExtension.m in Sources */,
+				E2DB74741129B5ED0045EEDA /* RCTToolbarButtonController.m in Sources */,
+				E2DB75201129C4480045EEDA /* DetectClosingTabExtension.m in Sources */,
+				E2DB7572112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.m in Sources */,
+				E2DB7576112A9B150045EEDA /* RCTClosedTab.m in Sources */,
 				E28A70F2112ECF3200029908 /* NSArray+CWSortedInsert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
