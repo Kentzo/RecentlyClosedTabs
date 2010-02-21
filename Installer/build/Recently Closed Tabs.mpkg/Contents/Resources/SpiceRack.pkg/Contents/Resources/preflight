@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ -f "$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist" ]; then
+	if [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then
+		`/bin/launchctl unload "$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist"`
+	else
+		`/bin/launchctl unload -S Aqua "$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist"`
+	fi
+fi
+
+exit 0
