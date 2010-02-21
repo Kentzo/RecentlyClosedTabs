@@ -39,7 +39,7 @@ static RCTPluginMain* g_sharedPluginLoader = nil;
 + (RCTPluginMain*)sharedInstance {
 	@synchronized(self) {
 		if (g_sharedPluginLoader == nil) {
-			g_sharedPluginLoader = [SWMPluginLoader new];
+			g_sharedPluginLoader = [RCTPluginMain new];
 		}
 	}
 	return g_sharedPluginLoader;
