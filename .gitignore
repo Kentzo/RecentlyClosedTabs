@@ -17,3 +17,6 @@ profile
  
 # emacs noise
 *~
+
+# installer noise
+Installer/build/*

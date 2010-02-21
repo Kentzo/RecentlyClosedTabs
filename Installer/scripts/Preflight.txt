@@ -1,5 +1,0 @@
-#!/bin/sh
-
-ln -s "$HOME" /private/tmp/CurrentUser
-
-exit 0
