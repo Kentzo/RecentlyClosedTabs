@@ -8,11 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SWMCustomToolbarButtonExtension.h"
+#import "SWMDetectClosingTabExtension.h"
 
 
-@interface SWMToolbarButtonController : NSObject <SWMCustomToolbarButtonExtensionDelegate> {
+@class SWMRecentlyClosedTabsWindowContoller;
+
+@interface SWMToolbarButtonController : NSObject <SWMCustomToolbarButtonExtensionDelegate, SWMDetectClosingTabExtensionDelegate> {
 	NSButton* toolbarButton;
+	SWMRecentlyClosedTabsWindowContoller* recentClosedTabsWindowController;
 }
 
 - (void)toolbarButtonClicked;
+
 @end

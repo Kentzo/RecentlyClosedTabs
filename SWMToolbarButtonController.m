@@ -8,15 +8,23 @@
 
 #import "SWMToolbarButtonController.h"
 #import "SWMDetectClosingTabExtension.h"
+#import "SWMRecentlyClosedTabsWindowContoller.h"
+#import "SWMClosedTab.h"
+
 
 @implementation SWMToolbarButtonController
 
 - init {
 	if (self = [super init]) {
+		NSBundle* pluginBundle = [NSBundle bundleForClass:[self class]];
+		NSImage* toolbarButtonIcon = [[NSImage alloc] initWithContentsOfFile:[pluginBundle pathForResource:@"ToolbarButtonIcon" ofType:@"png"]];
+		
 		toolbarButton = [NSButton new];
 		[toolbarButton setBezelStyle:NSTexturedRoundedBezelStyle];
 		[toolbarButton setFrameSize:NSMakeSize(28.0f, 25.0f)];
-		[toolbarButton setTitle:@"1"];
+		[toolbarButton setTitle:@"Recently closed tabs"];
+		[toolbarButton setToolTip:@"Display recently closed tabs"];
+		[toolbarButton setImage:toolbarButtonIcon];
 		[toolbarButton setAllowsMixedState:NO];
 		[toolbarButton setBordered:YES];
 		[toolbarButton setTransparent:NO];
@@ -24,8 +32,17 @@
 		[toolbarButton setIgnoresMultiClick:NO];
 		[toolbarButton setContinuous:NO];
 		[toolbarButton setAutoresizesSubviews:YES];
+		
+		recentClosedTabsWindowController = [[SWMRecentlyClosedTabsWindowContoller alloc] init];
+		
+		[toolbarButtonIcon release];
 	}
 	return self;
+}
+- (void)dealloc {
+	[toolbarButton release];
+	[recentClosedTabsWindowController release];
+	[super dealloc];
 }
 
 - (NSButton*)toolbarButton:(BrowserToolbar*)toolbar {
@@ -42,12 +59,31 @@
 }
 
 - (void)toolbarButtonClicked {
-	if ([SWMDetectClosingTabExtension isEnabled]) {
-		[SWMDetectClosingTabExtension disableExtension];
-	}
-	else {
-		[SWMDetectClosingTabExtension enableExtensionWithDelegate:nil error:nil];
-	}
-
+	[recentClosedTabsWindowController.window makeKeyAndOrderFront:nil];
 }
+
+- (void)browserDocument:(BrowserDocument*)document willCloseBrowserWebView:(BrowserWebView*)browserWebView {
+//	if (![browserWebView isLoading]) {
+	static NSURL* bookmarks, *topsites, *emptyurl;
+	if (bookmarks == nil) {
+		bookmarks = [[NSURL alloc] initWithString:@"bookmarks://"];
+	}
+	if (topsites == nil) {
+		topsites = [[NSURL alloc] initWithString:@"topsites://"];
+	}
+	if (emptyurl == nil) {
+		emptyurl = [[NSURL alloc] initWithString:@""];
+	}
+		NSString* title = [browserWebView currentTitle];
+		NSURL* url = [browserWebView currentURL];
+		NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];
+		if (url != nil && ![url isEqual:emptyurl] && ![url isEqual:bookmarks] && ![url isEqual:topsites]) {
+			SWMClosedTab* tab = [[SWMClosedTab alloc] initWithTitle:title url:url date:date favicon:nil];
+			[recentClosedTabsWindowController addClosedTab:tab];
+			[tab release];
+		}
+    
+//	}
+}
+
 @end

@@ -14,10 +14,10 @@
 
 @protocol SWMDetectClosingTabExtensionDelegate
 @required
-
+- (void)browserDocument:(BrowserDocument*)document willCloseBrowserWebView:(BrowserWebView*)browserWebView;
 @end
 
 @interface SWMDetectClosingTabExtension : UnallocableObject <DelegateExtending>
 - (void)SWMCloseTab:(BrowserTabViewItem*)arg1;
-- (void)SWMWindowWillClose:(BrowserWindow*)arg1;
+- (void)SWMWindowWillClose:(NSNotification*)arg1;
 @end

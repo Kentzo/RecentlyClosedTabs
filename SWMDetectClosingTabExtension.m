@@ -50,13 +50,18 @@ static id<SWMDetectClosingTabExtensionDelegate> g_DetectClosingTabExtension_Dele
 
 - (void)SWMCloseTab:(BrowserTabViewItem*)arg1 {
 	if (g_DetectClosingTabExtension_Enabled) {
-		NSLog(@"SWMCloseTab");
+		[g_DetectClosingTabExtension_Delegate browserDocument:[[arg1 webView] document] willCloseBrowserWebView:[arg1 webView]];
 	}
 	[self SWMCloseTab:arg1];
 }
-- (void)SWMWindowWillClose:(BrowserWindow*)arg1 {
+- (void)SWMWindowWillClose:(NSNotification*)arg1 {
 	if (g_DetectClosingTabExtension_Enabled) {
-		NSLog(@"SWMCloseTabOrWindow");
+		BrowserWindow* window = [arg1 object];
+		NSArray* orderedTabs = [window orderedTabViewItems];
+		for (BrowserTabViewItem* item in orderedTabs) {
+			BrowserWebView* webView = [item webView];
+			[g_DetectClosingTabExtension_Delegate browserDocument:[webView document] willCloseBrowserWebView:webView];
+		}
 	}
 }
 
