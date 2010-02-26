@@ -2,8 +2,8 @@
  *  SWMExtending.h
  *  SafariWindowManager
  *
- *  Created by Илья Кулаков on 06.02.10.
- *  Copyright 2010 __MyCompanyName__. All rights reserved.
+ *  Created by Ilya Kulakov on 06.02.10.
+ *  Copyright 2010. All rights reserved.
  *
  */
 
