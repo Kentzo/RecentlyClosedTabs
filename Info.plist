@@ -33,5 +33,19 @@
 		<key>MinVersion</key>
 		<string>4.0.4</string>
 	</dict>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUFeedURL</key>
+	<string></string>
+	<key>SUEnableAutomaticChecks</key>
+	<string>YES</string>
+	<key>SUEnableSystemProfiling</key>
+	<string>YES</string>
+	<key>SUShowReleaseNotes</key>
+	<string>NO</string>
+	<key>SUScheduledCheckInterval</key>
+	<string>86400</string>
+	<key>SUAllowsAutomaticUpdates</key>
+	<string></string>
 </dict>
 </plist>

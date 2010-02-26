@@ -7,7 +7,7 @@
  *
  */
 
-#include "Runtime.h"
+#import "Runtime.h"
 
 void class_addMethodsFromClass(Class dest, Class source) {
 	// Get method list of source class
