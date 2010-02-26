@@ -9,6 +9,7 @@
 #import "RCTPluginMain.h"
 #import "CustomToolbarButtonExtension.h"
 #import "RCTToolbarButtonController.h"
+#import <Sparkle/Sparkle.h>
 
 static RCTPluginMain* g_sharedPluginLoader = nil;
 
@@ -16,57 +17,31 @@ static RCTPluginMain* g_sharedPluginLoader = nil;
 
 + (void)load {
 	NSError* error = nil;
-	
-	
-	RCTToolbarButtonController* toolbarButtonController = [RCTToolbarButtonController new];
+    RCTToolbarButtonController* toolbarButtonController = [RCTToolbarButtonController new];
+
 	if (![CustomToolbarButtonExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
-		NSLog(@"SWMCustomToolbarButtonExtension was not loaded: %@", error);
+		NSLog(@"CustomToolbarButtonExtension was not loaded: %@", error);
+        return;
 	}
 	else {
-		NSLog(@"SWMCustomToolbarButtonExtension was loaded");
+		NSLog(@"CustomToolbarButtonExtension was loaded");
 	}
 	
 	if (![DetectClosingTabExtension enableExtensionWithDelegate:toolbarButtonController error:&error]) {
-		NSLog(@"SWMDetectClosingTabExtension was not loaded: %@", error);
+		NSLog(@"DetectClosingTabExtension was not loaded: %@", error);
+        return;
 	}
 	else {
-		NSLog(@"SWMDetectClosingTabExtension was loaded");
+		NSLog(@"DetectClosingTabExtension was loaded");
 	}
-	
 }
 
-#pragma mark Singleton
-+ (RCTPluginMain*)sharedInstance {
-	@synchronized(self) {
-		if (g_sharedPluginLoader == nil) {
-			g_sharedPluginLoader = [RCTPluginMain new];
-		}
-	}
-	return g_sharedPluginLoader;
-}
-+ (id)allocWithZone:(NSZone *)zone {
-    @synchronized(self) {
-        if (g_sharedPluginLoader == nil) {
-            g_sharedPluginLoader = [super allocWithZone:zone];
-            return g_sharedPluginLoader;  // assignment and return on first allocation
-        }
++ (SUUpdater*)pluginUpdater {
+    static SUUpdater* pluginUpdater = nil;
+    if (pluginUpdater == nil) {
+        pluginUpdater = [[SUUpdater alloc] initForBundle:[NSBundle bundleForClass:[self class]]];
     }
-    return nil; // on subsequent allocation attempts return nil
-}
-- (id)copyWithZone:(NSZone *)zone {
-    return self;
-}
-- (id)retain {
-    return self;
-}
-- (NSUInteger)retainCount {
-    return UINT_MAX;  // denotes an object that cannot be released
-}
-- (void)release {
-    //do nothing
-}
-- (id)autorelease {
-    return self;
+    return pluginUpdater;
 }
 
 @end

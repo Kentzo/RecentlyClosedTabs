@@ -22,6 +22,8 @@
 	<string>RecentlyClosedTabs</string>
 	<key>NSPrincipalClass</key>
 	<string>SWMPluginLoader</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 	<key>SpiceRack</key>
 	<dict>
 		<key>TargetID</key>
