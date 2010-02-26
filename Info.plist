@@ -21,7 +21,7 @@
 	<key>CFBundleName</key>
 	<string>RecentlyClosedTabs</string>
 	<key>NSPrincipalClass</key>
-	<string>SWMPluginLoader</string>
+	<string>RCTPluginMain</string>
 	<key>SpiceRack</key>
 	<dict>
 		<key>TargetID</key>
