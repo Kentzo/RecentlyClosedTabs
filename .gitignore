@@ -20,3 +20,8 @@ profile
 
 # installer noise
 Installer/build/*
+
+#gh-pages noise
+Sparkle/*
+RecentlyClosedTabs.xcodeproj/*
+JRSwizzle/*
