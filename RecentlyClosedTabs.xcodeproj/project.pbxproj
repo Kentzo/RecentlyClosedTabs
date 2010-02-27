@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E20BD99A11302A3600FA2031 /* ToolbarButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E20BD99911302A3600FA2031 /* ToolbarButtonIcon.png */; };
 		E23505AE1138179E008A523C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E23505AD1138179E008A523C /* dsa_pub.pem */; };
 		E23506BC11382605008A523C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23506BB11382605008A523C /* Cocoa.framework */; };
 		E235080111382DD6008A523C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
+		E23508A811399ED2008A523C /* ToolbarButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E23508A711399ED2008A523C /* ToolbarButtonIcon.png */; };
 		E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3F4111B500300B738C8 /* JRSwizzle.m */; };
 		E27B50BF1131AF32002A5F34 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
 		E28A70F2112ECF3200029908 /* NSArray+CWSortedInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */; };
@@ -77,9 +77,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E20BD99911302A3600FA2031 /* ToolbarButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolbarButtonIcon.png; sourceTree = "<group>"; };
 		E23505AD1138179E008A523C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		E23506BB11382605008A523C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E23508A711399ED2008A523C /* ToolbarButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolbarButtonIcon.png; sourceTree = "<group>"; };
 		E26DE3F3111B500300B738C8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
 		E26DE3F4111B500300B738C8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
 		E26DE521111D4BC200B738C8 /* Extending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extending.h; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 		E2DB756B112A99360045EEDA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E23508A711399ED2008A523C /* ToolbarButtonIcon.png */,
 				E23505AD1138179E008A523C /* dsa_pub.pem */,
-				E20BD99911302A3600FA2031 /* ToolbarButtonIcon.png */,
 				E2DB756C112A99510045EEDA /* RecentlyClosedTabsWindow.xib */,
 			);
 			name = Resources;
@@ -307,8 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DB756D112A99510045EEDA /* RecentlyClosedTabsWindow.xib in Resources */,
-				E20BD99A11302A3600FA2031 /* ToolbarButtonIcon.png in Resources */,
 				E23505AE1138179E008A523C /* dsa_pub.pem in Resources */,
+				E23508A811399ED2008A523C /* ToolbarButtonIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

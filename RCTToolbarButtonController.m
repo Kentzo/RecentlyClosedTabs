@@ -22,8 +22,8 @@
 		toolbarButton = [NSButton new];
 		[toolbarButton setBezelStyle:NSTexturedRoundedBezelStyle];
 		[toolbarButton setFrameSize:NSMakeSize(28.0f, 25.0f)];
-		[toolbarButton setTitle:@"Recently closed tabs"];
-		[toolbarButton setToolTip:@"Display recently closed tabs"];
+		[toolbarButton setTitle:@"Recently Closed Tabs"];
+		[toolbarButton setToolTip:@"Display Recently Closed Tabs window"];
 		[toolbarButton setImage:toolbarButtonIcon];
 		[toolbarButton setAllowsMixedState:NO];
 		[toolbarButton setBordered:YES];
