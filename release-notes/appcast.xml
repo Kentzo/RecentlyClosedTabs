@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>RecentlyClosedTabs Appcast</title>
+		<link>http://kentzo.github.com/recentlyclosedtabs/</link>
+		<language>en-us</language>
+		<description>Most recent changes with links to updates</description>
+
+		<item>
+		  <title>Version 1.0</title>
+		  <sparkle:releaseNotesLink>http://you.com/app/2.0.html</sparkle:releaseNotesLink>
+		  <pubDate>Wed, 09 Jan 2006 19:20:11 +0000</pubDate>
+		  <enclosure url="http://you.com/app/Your Great App 2.0.zip"
+			     sparkle:version="2.0"
+			     sparkle:dsaSignature="MC0CFBfeCa1JyW30nbkBwainOzrN6EQuAh="
+			     length="1623481"
+			     type="application/octet-stream" />
+		</item>
+
+	</channel>
+</rss>
