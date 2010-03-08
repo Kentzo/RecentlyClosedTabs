@@ -1309,7 +1309,7 @@
 									<key>Path Type</key>
 									<integer>2</integer>
 									<key>Status</key>
-									<true/>
+									<false/>
 								</dict>
 								<key>IFInstallationScriptsPostinstall</key>
 								<dict>
@@ -1332,7 +1332,7 @@
 									<key>Path Type</key>
 									<integer>2</integer>
 									<key>Status</key>
-									<true/>
+									<false/>
 								</dict>
 								<key>IFInstallationScriptsPreinstall</key>
 								<dict>
@@ -1539,7 +1539,7 @@
 						<key>Path Type</key>
 						<integer>2</integer>
 						<key>Status</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>IFInstallationScriptsPostinstall</key>
 					<dict>
@@ -1562,7 +1562,7 @@
 						<key>Path Type</key>
 						<integer>2</integer>
 						<key>Status</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>IFInstallationScriptsPreinstall</key>
 					<dict>
@@ -1620,7 +1620,7 @@
 						<key>IFPkgDescriptionDeleteWarning</key>
 						<string></string>
 						<key>IFPkgDescriptionDescription</key>
-						<string>Peace and Love</string>
+						<string></string>
 						<key>IFPkgDescriptionTitle</key>
 						<string>Recently Closed Tabs</string>
 						<key>IFPkgDescriptionVersion</key>
