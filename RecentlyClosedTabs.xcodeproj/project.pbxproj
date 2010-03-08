@@ -19,6 +19,18 @@
 			name = Install;
 			productName = Install;
 		};
+		E269596211456508006F314D /* Publish */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E269596E11456537006F314D /* Build configuration list for PBXAggregateTarget "Publish" */;
+			buildPhases = (
+				E269596A11456519006F314D /* ShellScript */,
+			);
+			dependencies = (
+				E269596611456513006F314D /* PBXTargetDependency */,
+			);
+			name = Publish;
+			productName = Publish;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -52,7 +64,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = E2E26F6D1118227A0007B2BF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */;
+			remoteGlobalIDString = E2E26FDB111873A20007B2BF;
+			remoteInfo = RecentlyClosedTabs;
+		};
+		E269596511456513006F314D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E26F6D1118227A0007B2BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E26FDB111873A20007B2BF;
 			remoteInfo = RecentlyClosedTabs;
 		};
 		E27B50AF1131AF16002A5F34 /* PBXContainerItemProxy */ = {
@@ -296,6 +315,7 @@
 			targets = (
 				E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */,
 				E269592911455A40006F314D /* Install */,
+				E269596211456508006F314D /* Publish */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +376,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl unload \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl unload -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\ncp -rf \"${TARGET_BUILD_DIR}/${TARGET_NAME}.bundle\" $HOME/Library/Application\\ Support/SpiceRack/Spices\n\nif [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl load \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl load -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\nexit 0";
+			shellScript = "if [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl unload \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl unload -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\ncp -rf \"${TARGET_BUILD_DIR}/${PROJECT_NAME}.bundle\" $HOME/Library/Application\\ Support/SpiceRack/Spices\n\nif [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl load \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl load -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\nexit 0";
+		};
+		E269596A11456519006F314D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "VERSION=$(defaults read \"${TARGET_BUILD_DIR}/${PROJECT_NAME}.bundle/Contents/Info\" CFBundleVersion)\nINSTALLER_PROJECT=\"${SRCROOT}/Installer/Recently Closed Tabs.packproj\"\nINSTALLER=\"${SRCROOT}/Installer/build/Recently Closed Tabs.mpkg\"\nINSTALLER_ZIP=\"${SRCROOT}/Installer/build/Recently Closed Tabs ${VERSION}.zip\"\n\nfreeze \"${INSTALLER_PROJECT}\"\nditto -c -k --keepParent -rsrc \"${INSTALLER}\" \"${INSTALLER_ZIP}\"\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -391,6 +424,11 @@
 			target = E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */;
 			targetProxy = E269592C11455A48006F314D /* PBXContainerItemProxy */;
 		};
+		E269596611456513006F314D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */;
+			targetProxy = E269596511456513006F314D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -411,6 +449,27 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = Install;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		E269596311456508006F314D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Publish;
+			};
+			name = Debug;
+		};
+		E269596411456508006F314D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Publish;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -502,6 +561,15 @@
 			buildConfigurations = (
 				E269592A11455A40006F314D /* Debug */,
 				E269592B11455A40006F314D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E269596E11456537006F314D /* Build configuration list for PBXAggregateTarget "Publish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E269596311456508006F314D /* Debug */,
+				E269596411456508006F314D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
