@@ -6,7 +6,7 @@
 
 header,footer,
 article,section,
-hgroup,nav,
+hgroup,nav,step,
 figure{
 	/* Giving a display value to the HTML5 rendered elements: */
 	display:block;
@@ -38,7 +38,7 @@ a img{
 
 /* Headings: */
 
-h1,h2,h3{
+h1,h2,h3,h4{
 	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
 	text-shadow:0 1px 1px black;
 }
@@ -47,7 +47,6 @@ h1{
 	/* The logo text */
 	font-size:3.5em;
 	padding:0.5em 0 0;
-	text-transform:uppercase;
 }
 
 h3{
@@ -162,8 +161,33 @@ article{
 	text-shadow:0 2px 0 black;
 }
 
+article#download{
+    background-color:#DC3522;
+    color:#D9CB9E;
+    text-shadow:none;
+}
+
+article#download img{
+    float:left;
+    padding-right:20px;
+    margin-left:-29px;
+}
+
+article#download h2 a{
+    color:#D9CB9E;
+}
+
+article#download h4{
+    font-size:1.4em;
+    font-weight:normal;
+    font-style:italic;
+}
+
+step{
+    height:325px;
+}
+
 figure{
-	border:3px solid #142830;
 	float:right;
 	height:300px;
 	margin-left:15px;
@@ -177,9 +201,9 @@ figure:hover{
 	box-shadow:0 0 2px #4D7788;
 }
 
-figure img{
+/*figure img{
 	margin-left:-60px;
-}
+}*/
 
 /* Footer styling: */
 
