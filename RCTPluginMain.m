@@ -34,6 +34,8 @@ static RCTPluginMain* g_sharedPluginLoader = nil;
 	else {
 		NSLog(@"DetectClosingTabExtension was loaded");
 	}
+    // Enable Sparkle
+    [self pluginUpdater];
 }
 
 + (SUUpdater*)pluginUpdater {

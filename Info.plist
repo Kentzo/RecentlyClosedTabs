@@ -22,6 +22,16 @@
 	<string>RecentlyClosedTabs</string>
 	<key>NSPrincipalClass</key>
 	<string>RCTPluginMain</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUFeedURL</key>
+	<string>http://kentzo.github.com/RecentlyClosedTabs/release-notes/appcast.xml</string>
+	<key>SUEnableAutomaticChecks</key>
+	<string>YES</string>
+	<key>SUScheduledCheckInterval</key>
+	<string>86400</string>
+	<key>SUAllowsAutomaticUpdates</key>
+	<string>NO</string>
 	<key>SpiceRack</key>
 	<dict>
 		<key>TargetID</key>
@@ -29,7 +39,7 @@
 		<key>AlertType</key>
 		<string>log</string>
 		<key>Homepage</key>
-		<string>http://twitter.com/kentzo</string>
+		<string>github.com/Kentzo/RecentlyClosedTabs</string>
 		<key>MinVersion</key>
 		<string>4.0.4</string>
 	</dict>
