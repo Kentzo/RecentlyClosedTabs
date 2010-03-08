@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E269592911455A40006F314D /* Install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E269593D11455A94006F314D /* Build configuration list for PBXAggregateTarget "Install" */;
+			buildPhases = (
+				E269593011455A4F006F314D /* ShellScript */,
+			);
+			dependencies = (
+				E269592D11455A48006F314D /* PBXTargetDependency */,
+			);
+			name = Install;
+			productName = Install;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		E23505AE1138179E008A523C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E23505AD1138179E008A523C /* dsa_pub.pem */; };
 		E23506BC11382605008A523C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23506BB11382605008A523C /* Cocoa.framework */; };
@@ -32,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = Sparkle;
+		};
+		E269592C11455A48006F314D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E26F6D1118227A0007B2BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */;
+			remoteInfo = RecentlyClosedTabs;
 		};
 		E27B50AF1131AF16002A5F34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -242,7 +264,6 @@
 				E27B50C01131AF5E002A5F34 /* CopyFiles */,
 				E2E26FD9111873A20007B2BF /* Sources */,
 				E2E26FDA111873A20007B2BF /* Frameworks */,
-				E2DB74A21129BC280045EEDA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -274,6 +295,7 @@
 			projectRoot = "";
 			targets = (
 				E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */,
+				E269592911455A40006F314D /* Install */,
 			);
 		};
 /* End PBXProject section */
@@ -323,16 +345,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E2DB74A21129BC280045EEDA /* ShellScript */ = {
+		E269593011455A4F006F314D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl unload \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl unload -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\ncp -rf \"${TARGET_BUILD_DIR}/${TARGET_NAME}.bundle\" $HOME/Library/Application\\ Support/SpiceRack/Spices\n\nif [ -f \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\" ]; then\n\tif [ `sysctl -n kern.osrelease | cut -d . -f 1` -lt 9 ]; then\n\t\t`/bin/launchctl load \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\telse\n\t\t`/bin/launchctl load -S Aqua \"$HOME/Library/LaunchAgents/com.tastyapps.SpiceRack.plist\"`\n\tfi\nfi\n\nexit 0";
 		};
@@ -364,9 +386,35 @@
 			name = Sparkle;
 			targetProxy = E2350608113822B1008A523C /* PBXContainerItemProxy */;
 		};
+		E269592D11455A48006F314D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */;
+			targetProxy = E269592C11455A48006F314D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E269592A11455A40006F314D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Install;
+			};
+			name = Debug;
+		};
+		E269592B11455A40006F314D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Install;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		E2E26F6E1118227A0007B2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -449,6 +497,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E269593D11455A94006F314D /* Build configuration list for PBXAggregateTarget "Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E269592A11455A40006F314D /* Debug */,
+				E269592B11455A40006F314D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "RecentlyClosedTabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
