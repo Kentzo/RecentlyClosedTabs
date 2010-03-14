@@ -389,7 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "VERSION=$(defaults read \"${TARGET_BUILD_DIR}/${PROJECT_NAME}.bundle/Contents/Info\" CFBundleVersion)\nINSTALLER_PROJECT=\"${SRCROOT}/Installer/Recently Closed Tabs.packproj\"\nINSTALLER=\"${SRCROOT}/Installer/build/Recently Closed Tabs.mpkg\"\nINSTALLER_ZIP=\"${SRCROOT}/Installer/build/Recently Closed Tabs ${VERSION}.zip\"\n\nfreeze \"${INSTALLER_PROJECT}\"\nditto -c -k --keepParent -rsrc \"${INSTALLER}\" \"${INSTALLER_ZIP}\"\n\nexit 0";
+			shellScript = "VERSION=$(defaults read \"${TARGET_BUILD_DIR}/${PROJECT_NAME}.bundle/Contents/Info\" CFBundleVersion)\nINSTALLER_PROJECT=\"${SRCROOT}/Installer/Recently Closed Tabs.packproj\"\nINSTALLER=\"${SRCROOT}/Installer/build/Recently Closed Tabs.mpkg\"\nINSTALLER_ZIP=\"${SRCROOT}/Installer/build/Recently Closed Tabs ${VERSION}.zip\"\n\nfreeze \"${INSTALLER_PROJECT}\"\nditto -c -k --keepParent -rsrc \"${INSTALLER}\" \"${INSTALLER_ZIP}\"\nSIGNATURE=$(openssl dgst -sha1 -binary < \"${INSTALLER_ZIP}\" | openssl dgst -dss1 -sign <(security find-generic-password -g -s \"Sparkle Private Key\" 2>&1 1>/dev/null | sed -n 's/.*\\(-----BEGIN DSA PRIVATE KEY\\)\\(.*\\)\\(END DSA PRIVATE KEY-----\\).*/\\1\\2\\3/p' | perl -pi -e 's/\\\\015/\\n/g') | openssl enc -base64)\n\necho \"signature: ${SIGNATURE}\" > \"${SRCROOT}/Installer/build/appcast.xml\"\necho \"length: `ls -l \"${INSTALLER_ZIP}\" | awk '{print $5}'`\" >> \"${SRCROOT}/Installer/build/appcast.xml\"\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
