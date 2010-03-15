@@ -7,13 +7,13 @@
 		<description>Most recent changes with links to updates</description>
 
 		<item>
-		  <title>Version 1.0</title>
+		  <title>Version 1.1</title>
 		  <sparkle:releaseNotesLink>http://you.com/app/2.0.html</sparkle:releaseNotesLink>
-		  <pubDate>Wed, 09 Jan 2006 19:20:11 +0000</pubDate>
-		  <enclosure url="http://you.com/app/Your Great App 2.0.zip"
+		  <pubDate>Mon, 15 Mar 2010 19:25:00 +0000</pubDate>
+		  <enclosure url="http://cloud.github.com/downloads/Kentzo/RecentlyClosedTabs/Recently%20Closed%20Tabs%201.1.zip"
 			     sparkle:version="2.0"
-			     sparkle:dsaSignature="MC0CFBfeCa1JyW30nbkBwainOzrN6EQuAh="
-			     length="1623481"
+			     sparkle:dsaSignature="MCwCFH0IVPcAnpdrtkktBQPpJJhFj4dfAhQ9QsDSh+9HNr4K5tO9+cJMugHiDQ=="
+			     length="1449334"
 			     type="application/octet-stream" />
 		</item>
 
