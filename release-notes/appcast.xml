@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0" xmlns:dc="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>RecentlyClosedTabs Appcast</title>
 		<link>http://kentzo.github.com/recentlyclosedtabs/</link>
@@ -11,7 +11,7 @@
 		  <sparkle:releaseNotesLink>http://you.com/app/2.0.html</sparkle:releaseNotesLink>
 		  <pubDate>Mon, 15 Mar 2010 19:25:00 +0000</pubDate>
 		  <enclosure url="http://cloud.github.com/downloads/Kentzo/RecentlyClosedTabs/Recently%20Closed%20Tabs%201.1.zip"
-			     sparkle:version="2.0"
+			     sparkle:version="1.1"
 			     sparkle:dsaSignature="MCwCFH0IVPcAnpdrtkktBQPpJJhFj4dfAhQ9QsDSh+9HNr4K5tO9+cJMugHiDQ=="
 			     length="1449334"
 			     type="application/octet-stream" />
