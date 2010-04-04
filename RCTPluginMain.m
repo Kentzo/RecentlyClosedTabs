@@ -38,20 +38,21 @@ static RCTPluginMain* g_sharedPluginLoader = nil;
     if (error != nil) {
         [CustomToolbarButtonExtension disableExtension];
         [DetectClosingTabExtension disableExtension];
+        [toolbarButtonController release];
         return;
     }
     
     // Enable Sparkle
-    [self pluginUpdater];
+    //[self pluginUpdater];
     
     NSLog(@"RCT did end loading");
 }
 
 + (SUUpdater*)pluginUpdater {
     static SUUpdater* pluginUpdater = nil;
-    if (pluginUpdater == nil) {
-        pluginUpdater = [[SUUpdater alloc] initForBundle:[NSBundle bundleForClass:[self class]]];
-    }
+   // if (pluginUpdater == nil) {
+//        pluginUpdater = [[SUUpdater alloc] initForBundle:[NSBundle bundleForClass:[self class]]];
+//    }
     return pluginUpdater;
 }
 

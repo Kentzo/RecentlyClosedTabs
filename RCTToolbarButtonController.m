@@ -49,10 +49,10 @@
 	return toolbarButton;
 }
 - (NSString*)toolbarButtonIdentifier:(BrowserToolbar*)toolbar {
-	return @"ClosedTabHistory";
+	return @"RecentlyClosedTabs";
 }
 - (NSString*)toolbarButtonToolTip:(BrowserToolbar*)toolbar {
-	return @"Display recent closed tabs";
+	return @"Display recently closed tabs";
 }
 - (SEL)toolbarButtonAction:(BrowserToolbar*)toolbar {
 	return @selector(toolbarButtonClicked);

@@ -12,6 +12,7 @@
 
 @implementation CustomToolbarButtonExtension
 
+static CFStringRef const g_BrowserToolbarItemsIdentifiers = (CFStringRef)@"BrowserToolbarItemsIdentifiers";
 static BOOL g_CustomToolbarButtonExtension_Enabled = NO;
 static id<CustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_Delegate = nil;
 
@@ -33,27 +34,38 @@ static id<CustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_D
 		NSDocumentController* documentContr = [NSDocumentController sharedDocumentController];
 		BrowserWindowController* windowContr = [[[documentContr documents] objectAtIndex:0] browserWindowController];
 		BrowserToolbar* toolbar = [[windowContr window] toolbar];
-		
+        
+        // Get identifier of our item from delegate
 		NSString* itemIdentifier = [g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar];
 		
-		// Load toolbar item data from defaults
-		NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-		NSDictionary* configuration = [defaults dictionaryForKey:@"NSToolbar Configuration BrowserWindowToolbarIdentifier"];
-		NSArray* allIdentifiers = [configuration objectForKey:@"TB Item Identifiers"];
-		NSUInteger index = [allIdentifiers indexOfObject:itemIdentifier];
-
-		if (index != NSNotFound) {
-			NSArray* loadedIdentifiers = [toolbar valueForKeyPath:@"items.itemIdentifier"];
-			// Test what items already loaded and what did not
-			NSMutableArray* filtredIdents = [NSMutableArray arrayWithArray:allIdentifiers];
-			[filtredIdents removeObjectsInArray:loadedIdentifiers];
-			// Determine index offset for our button
-			NSUInteger indexOffset = [filtredIdents indexOfObject:itemIdentifier];
-			// Insert our button to the toolbar
-			[toolbar _userInsertItemWithItemIdentifier:itemIdentifier
-											   atIndex:(index - indexOffset)];
-		}
-		
+        // Get list of toolbar items identifiers
+        CFStringRef bundleIdentifier = (CFStringRef)[[NSBundle bundleForClass:[self class]] bundleIdentifier];
+        CFPreferencesAppSynchronize(bundleIdentifier);
+        NSArray* allIdentifiers = (NSArray*)CFPreferencesCopyAppValue(g_BrowserToolbarItemsIdentifiers, bundleIdentifier);
+        if (allIdentifiers != NULL) {
+            [(id)CFMakeCollectable(allIdentifiers) autorelease];
+            
+            // Get index of our button on toolbar
+            NSUInteger index = [allIdentifiers indexOfObject:itemIdentifier];
+            if (index != NSNotFound) {
+                NSArray* loadedIdentifiers = [toolbar valueForKeyPath:@"items.itemIdentifier"];
+                // Test what items already loaded and what did not
+                NSMutableArray* filtredIdents = [NSMutableArray arrayWithArray:allIdentifiers];
+                [filtredIdents removeObjectsInArray:loadedIdentifiers];
+                // Determine index offset for our button
+                NSUInteger indexOffset = [filtredIdents indexOfObject:itemIdentifier];
+                // Insert our button to the toolbar
+                [toolbar _userInsertItemWithItemIdentifier:itemIdentifier
+                                                   atIndex:(index - indexOffset)];
+            }
+        }
+        
+        // Add observer for userdefaults notifications
+        [[NSNotificationCenter defaultCenter] addObserver:[self class] 
+                                                 selector:@selector(storeToolbarItemIdentifiers:) 
+                                                     name:NSUserDefaultsDidChangeNotification 
+                                                   object:[NSUserDefaults standardUserDefaults]];
+        
 		if (g_CustomToolbarButtonExtension_Enabled)
 			g_CustomToolbarButtonExtension_Initialized = YES;
 	}
@@ -75,6 +87,12 @@ static id<CustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_D
 	if ([identifiers containsObject:buttonIdentifier]) {
 		[toolbar removeItemWithIdentifier:buttonIdentifier];
 	}
+    
+    // Remove observer for userdefaults notification
+    [[NSNotificationCenter defaultCenter] removeObserver:[self class] 
+                                                    name:NSUserDefaultsDidChangeNotification 
+                                                  object:[NSUserDefaults standardUserDefaults]];
+    
 	g_CustomToolbarButtonExtension_Enabled = NO;
 }
 + (Class)extendedClass {
@@ -88,37 +106,44 @@ static id<CustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_D
 	static BrowserToolbarItem* SWMToolBarItem = nil;
 	
 	id result = nil;
-	if (g_CustomToolbarButtonExtension_Enabled) {
-		// If identifier is equal to identifier in delegate will return our cursom item
-		if ([identifier isEqualToString:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]]) {
-			if (SWMToolBarItem == nil) {
-				// Create item only once
-				NSButton* SWMButton = [g_CustomToolbarButtonExtension_Delegate toolbarButton:toolbar];
-				SWMToolBarItem = [[NSClassFromString(@"BrowserToolbarItem") alloc] 
-								  initWithItemIdentifier:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]
-								  target:g_CustomToolbarButtonExtension_Delegate
-								  button:SWMButton];
-				[SWMToolBarItem setAction:[g_CustomToolbarButtonExtension_Delegate toolbarButtonAction:toolbar]];
-				[SWMToolBarItem setToolTip:[g_CustomToolbarButtonExtension_Delegate toolbarButtonToolTip:toolbar]];
-			}
-			result = SWMToolBarItem;
-		}
-		else
-			result = [self SWMToolbar:toolbar itemForItemIdentifier:identifier willBeInsertedIntoToolbar:willBeInserted];
+	if (g_CustomToolbarButtonExtension_Enabled &&
+        [identifier isEqualToString:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]]) 
+    {
+		// If identifier is equal to identifier in delegate will return our button
+        if (SWMToolBarItem == nil) {
+            // Create item only once
+            NSButton* SWMButton = [g_CustomToolbarButtonExtension_Delegate toolbarButton:toolbar];
+            SWMToolBarItem = [[NSClassFromString(@"BrowserToolbarItem") alloc] 
+                              initWithItemIdentifier:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]
+                              target:g_CustomToolbarButtonExtension_Delegate
+                              button:SWMButton];
+            [SWMToolBarItem setAction:[g_CustomToolbarButtonExtension_Delegate toolbarButtonAction:toolbar]];
+            [SWMToolBarItem setToolTip:[g_CustomToolbarButtonExtension_Delegate toolbarButtonToolTip:toolbar]];
+        }
+        result = SWMToolBarItem;
 	}
 	else
 		result = [self SWMToolbar:toolbar itemForItemIdentifier:identifier willBeInsertedIntoToolbar:willBeInserted];
-	
+    
 	return result;
 }
 - (NSArray*)SWMToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar {
 	NSArray* result = [self SWMToolbarAllowedItemIdentifiers:toolbar];
-	if (g_CustomToolbarButtonExtension_Enabled) {
-		return [result arrayByAddingObject:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]];
-	}
-	else {
-		return result;
-	}
+	if (g_CustomToolbarButtonExtension_Enabled)
+		result = [result arrayByAddingObject:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]];
+
+    return result;
+}
++ (void)storeToolbarItemIdentifiers:(NSNotification*)notification {
+    // Get toolbar object
+    NSDocumentController* documentContr = [NSDocumentController sharedDocumentController];
+    BrowserWindowController* windowContr = [[[documentContr documents] objectAtIndex:0] browserWindowController];
+    BrowserToolbar* toolbar = [[windowContr window] toolbar];
+    
+    // Store identifiers of toolbar items
+    CFStringRef bundleIdentifier = (CFStringRef)[[NSBundle bundleForClass:[self class]] bundleIdentifier];
+    CFPreferencesSetAppValue(g_BrowserToolbarItemsIdentifiers, [toolbar valueForKeyPath:@"items.itemIdentifier"], bundleIdentifier);
+    CFPreferencesAppSynchronize(bundleIdentifier);
 }
 
 @end

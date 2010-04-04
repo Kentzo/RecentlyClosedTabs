@@ -7,8 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CoreFoundation/CoreFoundation.h>
 #import "DumpedSafariHeaders.h"
-#import "UnallocableObject.h"
 #import "Extending.h"
 
 
@@ -20,7 +20,8 @@
 - (SEL)toolbarButtonAction:(BrowserToolbar*)toolbar;
 @end
 
-@interface CustomToolbarButtonExtension : UnallocableObject <DelegateExtending>
+@interface CustomToolbarButtonExtension : NSObject <DelegateExtending>
 - (BrowserToolbarItem*)SWMToolbar:(BrowserToolbar*)toolbar itemForItemIdentifier:(NSString*)identifier willBeInsertedIntoToolbar:(BOOL)willBeInserted;
 - (NSArray*)SWMToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar;
++ (void)storeToolbarItemIdentifiers:(NSNotification*)notification;
 @end
