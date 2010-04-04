@@ -38,10 +38,10 @@
 		E23506BC11382605008A523C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23506BB11382605008A523C /* Cocoa.framework */; };
 		E235080111382DD6008A523C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
 		E23508A811399ED2008A523C /* ToolbarButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E23508A711399ED2008A523C /* ToolbarButtonIcon.png */; };
+		E23C260A1168AA6900FAD91E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23C26091168AA6900FAD91E /* CoreFoundation.framework */; };
 		E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3F4111B500300B738C8 /* JRSwizzle.m */; };
 		E27B50BF1131AF32002A5F34 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
 		E28A70F2112ECF3200029908 /* NSArray+CWSortedInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */; };
-		E2BFAE81112177640029689B /* UnallocableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAE80112177640029689B /* UnallocableObject.m */; };
 		E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAEF911218A5B0029689B /* Runtime.m */; };
 		E2BFAF39112193DE0029689B /* CustomToolbarButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAF38112193DE0029689B /* CustomToolbarButtonExtension.m */; };
 		E2DB74741129B5ED0045EEDA /* RCTToolbarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */; };
@@ -121,14 +121,13 @@
 		E23505AD1138179E008A523C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		E23506BB11382605008A523C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E23508A711399ED2008A523C /* ToolbarButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolbarButtonIcon.png; sourceTree = "<group>"; };
+		E23C26091168AA6900FAD91E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		E26DE3F3111B500300B738C8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
 		E26DE3F4111B500300B738C8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
 		E26DE521111D4BC200B738C8 /* Extending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extending.h; sourceTree = "<group>"; };
 		E27B50A31131AF16002A5F34 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = Sparkle/Sparkle.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CWSortedInsert.m"; sourceTree = "<group>"; };
 		E28A70F1112ECF3200029908 /* NSArray+CWSortedInsert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CWSortedInsert.h"; sourceTree = "<group>"; };
-		E2BFAE7F112177640029689B /* UnallocableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnallocableObject.h; sourceTree = "<group>"; };
-		E2BFAE80112177640029689B /* UnallocableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnallocableObject.m; sourceTree = "<group>"; };
 		E2BFAEF811218A5B0029689B /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
 		E2BFAEF911218A5B0029689B /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
 		E2BFAF37112193DE0029689B /* CustomToolbarButtonExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomToolbarButtonExtension.h; sourceTree = "<group>"; };
@@ -156,6 +155,7 @@
 			files = (
 				E235080111382DD6008A523C /* Sparkle.framework in Frameworks */,
 				E23506BC11382605008A523C /* Cocoa.framework in Frameworks */,
+				E23C260A1168AA6900FAD91E /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,8 +165,6 @@
 		E235053C1137FCB1008A523C /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
-				E2BFAE7F112177640029689B /* UnallocableObject.h */,
-				E2BFAE80112177640029689B /* UnallocableObject.m */,
 				E2BFAEF811218A5B0029689B /* Runtime.h */,
 				E2BFAEF911218A5B0029689B /* Runtime.m */,
 			);
@@ -205,8 +203,8 @@
 		E2BFAE79112177080029689B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E26DE521111D4BC200B738C8 /* Extending.h */,
 				E2E26FCA1118657C0007B2BF /* DumpedSafariHeaders.h */,
+				E26DE521111D4BC200B738C8 /* Extending.h */,
 				E2BFAF37112193DE0029689B /* CustomToolbarButtonExtension.h */,
 				E2BFAF38112193DE0029689B /* CustomToolbarButtonExtension.m */,
 				E2DB751E1129C4480045EEDA /* DetectClosingTabExtension.h */,
@@ -234,6 +232,7 @@
 				E2E26FDD111873A20007B2BF /* Products */,
 				E2E26FDE111873A20007B2BF /* Info.plist */,
 				E23506BB11382605008A523C /* Cocoa.framework */,
+				E23C26091168AA6900FAD91E /* CoreFoundation.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +298,9 @@
 /* Begin PBXProject section */
 		E2E26F6D1118227A0007B2BF /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
 			buildConfigurationList = E2E26F701118227A0007B2BF /* Build configuration list for PBXProject "RecentlyClosedTabs" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
@@ -400,7 +402,6 @@
 			files = (
 				E2E26FE2111873D10007B2BF /* RCTPluginMain.m in Sources */,
 				E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */,
-				E2BFAE81112177640029689B /* UnallocableObject.m in Sources */,
 				E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */,
 				E2BFAF39112193DE0029689B /* CustomToolbarButtonExtension.m in Sources */,
 				E2DB74741129B5ED0045EEDA /* RCTToolbarButtonController.m in Sources */,
@@ -479,6 +480,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -491,6 +494,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				RUN_CLANG_STATIC_ANALYZER = NO;

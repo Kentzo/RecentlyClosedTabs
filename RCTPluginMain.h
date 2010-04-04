@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UnallocableObject.h"
 
 @class SUUpdater;
 
-@interface RCTPluginMain : UnallocableObject
+@interface RCTPluginMain : NSObject
 + (SUUpdater*)pluginUpdater;
 @end

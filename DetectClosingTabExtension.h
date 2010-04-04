@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import "DumpedSafariHeaders.h"
-#import "UnallocableObject.h"
 #import "Extending.h"
 
 
@@ -17,7 +16,7 @@
 - (void)browserDocument:(BrowserDocument*)document willCloseBrowserWebView:(BrowserWebView*)browserWebView;
 @end
 
-@interface DetectClosingTabExtension : UnallocableObject <DelegateExtending>
+@interface DetectClosingTabExtension : NSObject <DelegateExtending>
 - (void)SWMCloseTab:(BrowserTabViewItem*)arg1;
 - (void)SWMWindowWillClose:(NSNotification*)arg1;
 @end
