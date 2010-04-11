@@ -1,5 +1,5 @@
 //
-//  SWMPlugin.m
+//  RCTPluginMain.m
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 02.02.10.
@@ -9,7 +9,6 @@
 #import "RCTPluginMain.h"
 #import "CustomToolbarButtonExtension.h"
 #import "RCTToolbarButtonController.h"
-#import <Sparkle/Sparkle.h>
 
 static RCTPluginMain* g_sharedPluginLoader = nil;
 
@@ -41,19 +40,26 @@ static RCTPluginMain* g_sharedPluginLoader = nil;
         [toolbarButtonController release];
         return;
     }
-    
-    // Enable Sparkle
-    //[self pluginUpdater];
+    [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(checkForUpdates) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:3600.0 target:self selector:@selector(checkForUpdates) userInfo:nil repeats:YES];
     
     NSLog(@"RCT did end loading");
 }
 
-+ (SUUpdater*)pluginUpdater {
-    static SUUpdater* pluginUpdater = nil;
-   // if (pluginUpdater == nil) {
-//        pluginUpdater = [[SUUpdater alloc] initForBundle:[NSBundle bundleForClass:[self class]]];
-//    }
-    return pluginUpdater;
++ (void)checkForUpdates {
+    NSLog(@"checkForUpdates");
+
+    NSBundle* pluginBundle = [NSBundle bundleForClass:[self class]];
+    NSString* updaterPath = [NSString pathWithComponents:[NSArray arrayWithObjects:[pluginBundle resourcePath],
+                                                          @"RecentlyClosedTabs Updater.app", nil]];
+    NSBundle* updaterBundle = [NSBundle bundleWithPath:updaterPath];
+    
+    NSString* bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+    NSString* processID = [[NSNumber numberWithInt:[[NSProcessInfo processInfo] processIdentifier]] stringValue];
+    NSString* pathToRelaunch = [[NSBundle mainBundle] bundlePath];
+    NSLog(@"bundleIdentifier: %@\nprocessID: %@\npathToRelaunch: %@", bundleIdentifier, processID, pathToRelaunch);
+    [NSTask launchedTaskWithLaunchPath:[updaterBundle executablePath] 
+                             arguments:[NSArray arrayWithObjects:bundleIdentifier, processID, pathToRelaunch, @"--background", nil]];
 }
 
 @end

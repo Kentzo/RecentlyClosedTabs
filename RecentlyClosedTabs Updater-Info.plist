@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSUIElement</key>
+	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -11,27 +13,26 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
-	<string>BNDL</string>
+	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>${PRODUCT_VERSION}</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>${PRODUCT_VERSION}</string>
-	<key>CFBundleName</key>
-	<string>RecentlyClosedTabs</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<key>NSMainNibFile</key>
+	<string>RecentlyClosedTabsUpdaterWindow</string>
 	<key>NSPrincipalClass</key>
-	<string>RCTPluginMain</string>
-	<key>SpiceRack</key>
-	<dict>
-		<key>TargetID</key>
-		<string>com.apple.Safari</string>
-		<key>AlertType</key>
-		<string>log</string>
-		<key>Homepage</key>
-		<string>http://kentzo.github.com/RecentlyClosedTabs/</string>
-		<key>MinVersion</key>
-		<string>4.0.4</string>
-	</dict>
+	<string>NSApplication</string>
+	<key>SUFeedURL</key>
+	<string>http://kentzo.github.com/RecentlyClosedTabs/release-notes/appcast.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
+	<key>SUAllowsAutomaticUpdates</key>
+	<false/>
 </dict>
 </plist>

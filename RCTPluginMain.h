@@ -1,5 +1,5 @@
 //
-//  SWMPlugin.h
+//  RCTPluginMain.h
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 02.02.10.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class SUUpdater;
-
 @interface RCTPluginMain : NSObject
-+ (SUUpdater*)pluginUpdater;
+
++ (void)checkForUpdates;
+
 @end
