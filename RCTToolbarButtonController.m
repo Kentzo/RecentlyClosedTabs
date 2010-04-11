@@ -1,5 +1,5 @@
 //
-//  SWMToolbarButtonController.m
+//  RCTToolbarButtonController.m
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 15.02.10.
@@ -63,7 +63,6 @@
 }
 
 - (void)browserDocument:(BrowserDocument*)document willCloseBrowserWebView:(BrowserWebView*)browserWebView {
-//	if (![browserWebView isLoading]) {
 	static NSURL* bookmarks, *topsites, *emptyurl;
 	if (bookmarks == nil) {
 		bookmarks = [[NSURL alloc] initWithString:@"bookmarks://"];
@@ -83,7 +82,6 @@
 			[tab release];
 		}
     
-//	}
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  SWMRecentClosedTabsWindowContoller.m
+//  RCTRecentlyClosedTabsWindowContoller.m
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 16.02.10.
@@ -33,7 +33,7 @@
 		[tableView setTarget:self];
 		// if no sort descriptors are set, will add them
 		if (![[tableView sortDescriptors] count]) {
-			NSLog(@"SWM: No descriptors found. Set to default.");
+			NSLog(@"RCT: No descriptors found. Set to default.");
             NSArray* sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"closingTime" ascending:NO]];
 			[tableView setSortDescriptors:sortDescriptors];
 			[tableView setIndicatorImage:[NSImage imageNamed:@"NSDescendingSortIndicator"]

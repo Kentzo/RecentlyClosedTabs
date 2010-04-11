@@ -1,5 +1,5 @@
 /*
- *  SWMExtending.h
+ *  Extending.h
  *  SafariWindowManager
  *
  *  Created by Ilya Kulakov on 06.02.10.

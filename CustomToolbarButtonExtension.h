@@ -1,5 +1,5 @@
 //
-//  SWMCustomToolbarButtonExtension.h
+//  RCTCustomToolbarButtonExtension.h
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 09.02.10.
@@ -21,7 +21,7 @@
 @end
 
 @interface CustomToolbarButtonExtension : NSObject <DelegateExtending>
-- (BrowserToolbarItem*)SWMToolbar:(BrowserToolbar*)toolbar itemForItemIdentifier:(NSString*)identifier willBeInsertedIntoToolbar:(BOOL)willBeInserted;
-- (NSArray*)SWMToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar;
+- (BrowserToolbarItem*)RCTToolbar:(BrowserToolbar*)toolbar itemForItemIdentifier:(NSString*)identifier willBeInsertedIntoToolbar:(BOOL)willBeInserted;
+- (NSArray*)RCTToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar;
 + (void)storeToolbarItemIdentifiers:(NSNotification*)notification;
 @end

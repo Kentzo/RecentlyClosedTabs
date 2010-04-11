@@ -1,5 +1,5 @@
 //
-//  SWMClosedTab.h
+//  RCTClosedTab.h
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 16.02.10.

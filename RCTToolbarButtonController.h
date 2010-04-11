@@ -1,5 +1,5 @@
 //
-//  SWMToolbarButtonController.h
+//  RCTToolbarButtonController.h
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 15.02.10.

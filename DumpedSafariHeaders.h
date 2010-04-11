@@ -68,7 +68,7 @@ typedef enum _windowPolicy {
 
 @interface BrowserDocumentController : NSDocumentController
 - (BrowserDocument*)openEmptyBrowserDocument;
-- (void)SWMReOpenDocumnetWithTabs:(NSArray*)tabURLs;
+//- (void)SWMReOpenDocumnetWithTabs:(NSArray*)tabURLs;
 - (id)goToURL:(id)arg1 windowPolicy:(int)arg2;
 @end
 

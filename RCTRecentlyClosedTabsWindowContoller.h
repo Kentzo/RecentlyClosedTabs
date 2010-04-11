@@ -1,5 +1,5 @@
 //
-//  SWMRecentClosedTabsWindowContoller.h
+//  RCTRecentlyClosedTabsWindowContoller.h
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 16.02.10.

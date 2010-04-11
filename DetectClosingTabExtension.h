@@ -1,5 +1,5 @@
 //
-//  SWMDetectClosingTabExtension.h
+//  RCTDetectClosingTabExtension.h
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 16.02.10.
@@ -17,6 +17,6 @@
 @end
 
 @interface DetectClosingTabExtension : NSObject <DelegateExtending>
-- (void)SWMCloseTab:(BrowserTabViewItem*)arg1;
-- (void)SWMWindowWillClose:(NSNotification*)arg1;
+- (void)RCTCloseTab:(BrowserTabViewItem*)arg1;
+- (void)RCTWindowWillClose:(NSNotification*)arg1;
 @end

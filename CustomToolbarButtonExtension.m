@@ -1,5 +1,5 @@
 //
-//  SWMCustomToolbarButtonExtension.m
+//  RCTCustomToolbarButtonExtension.m
 //  SafariWindowManager
 //
 //  Created by Ilya Kulakov on 09.02.10.
@@ -24,10 +24,10 @@ static id<CustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_D
 		class_addMethodsFromClass(origClass, self);
 		g_CustomToolbarButtonExtension_Delegate = delegate;
 		g_CustomToolbarButtonExtension_Enabled = [origClass jr_swizzleMethod:@selector(toolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:)
-															 withMethod:@selector(SWMToolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:)
+															 withMethod:@selector(RCTToolbar:itemForItemIdentifier:willBeInsertedIntoToolbar:)
 																  error:error] &&
 												[origClass jr_swizzleMethod:@selector(toolbarAllowedItemIdentifiers:) 
-															withMethod:@selector(SWMToolbarAllowedItemIdentifiers:) 
+															withMethod:@selector(RCTToolbarAllowedItemIdentifiers:) 
 																 error:error];
 		
 		// Get toolbar object
@@ -102,33 +102,33 @@ static id<CustomToolbarButtonExtensionDelegate> g_CustomToolbarButtonExtension_D
 	return g_CustomToolbarButtonExtension_Enabled;
 }
 
-- (BrowserToolbarItem*)SWMToolbar:(BrowserToolbar*)toolbar itemForItemIdentifier:(NSString*)identifier willBeInsertedIntoToolbar:(BOOL)willBeInserted {
-	static BrowserToolbarItem* SWMToolBarItem = nil;
+- (BrowserToolbarItem*)RCTToolbar:(BrowserToolbar*)toolbar itemForItemIdentifier:(NSString*)identifier willBeInsertedIntoToolbar:(BOOL)willBeInserted {
+	static BrowserToolbarItem* RCTToolBarItem = nil;
 	
 	id result = nil;
 	if (g_CustomToolbarButtonExtension_Enabled &&
         [identifier isEqualToString:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]]) 
     {
 		// If identifier is equal to identifier in delegate will return our button
-        if (SWMToolBarItem == nil) {
+        if (RCTToolBarItem == nil) {
             // Create item only once
-            NSButton* SWMButton = [g_CustomToolbarButtonExtension_Delegate toolbarButton:toolbar];
-            SWMToolBarItem = [[NSClassFromString(@"BrowserToolbarItem") alloc] 
+            NSButton* RCTButton = [g_CustomToolbarButtonExtension_Delegate toolbarButton:toolbar];
+            RCTToolBarItem = [[NSClassFromString(@"BrowserToolbarItem") alloc] 
                               initWithItemIdentifier:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]
                               target:g_CustomToolbarButtonExtension_Delegate
-                              button:SWMButton];
-            [SWMToolBarItem setAction:[g_CustomToolbarButtonExtension_Delegate toolbarButtonAction:toolbar]];
-            [SWMToolBarItem setToolTip:[g_CustomToolbarButtonExtension_Delegate toolbarButtonToolTip:toolbar]];
+                              button:RCTButton];
+            [RCTToolBarItem setAction:[g_CustomToolbarButtonExtension_Delegate toolbarButtonAction:toolbar]];
+            [RCTToolBarItem setToolTip:[g_CustomToolbarButtonExtension_Delegate toolbarButtonToolTip:toolbar]];
         }
-        result = SWMToolBarItem;
+        result = RCTToolBarItem;
 	}
 	else
-		result = [self SWMToolbar:toolbar itemForItemIdentifier:identifier willBeInsertedIntoToolbar:willBeInserted];
+		result = [self RCTToolbar:toolbar itemForItemIdentifier:identifier willBeInsertedIntoToolbar:willBeInserted];
     
 	return result;
 }
-- (NSArray*)SWMToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar {
-	NSArray* result = [self SWMToolbarAllowedItemIdentifiers:toolbar];
+- (NSArray*)RCTToolbarAllowedItemIdentifiers:(BrowserToolbar*)toolbar {
+	NSArray* result = [self RCTToolbarAllowedItemIdentifiers:toolbar];
 	if (g_CustomToolbarButtonExtension_Enabled)
 		result = [result arrayByAddingObject:[g_CustomToolbarButtonExtension_Delegate toolbarButtonIdentifier:toolbar]];
 
