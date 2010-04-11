@@ -34,16 +34,21 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		E23505AE1138179E008A523C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E23505AD1138179E008A523C /* dsa_pub.pem */; };
-		E23506BC11382605008A523C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23506BB11382605008A523C /* Cocoa.framework */; };
-		E235080111382DD6008A523C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
+		E221834B1171B9FA00323119 /* RecentlyClosedTabsUpdaterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E221834A1171B9FA00323119 /* RecentlyClosedTabsUpdaterWindow.xib */; };
+		E22183FB1171C7EB00323119 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
 		E23508A811399ED2008A523C /* ToolbarButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E23508A711399ED2008A523C /* ToolbarButtonIcon.png */; };
-		E23C260A1168AA6900FAD91E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23C26091168AA6900FAD91E /* CoreFoundation.framework */; };
+		E254608E11718F2300260D79 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
+		E25460911171901400260D79 /* RecentlyClosedTabs Updater.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2546059117189B200260D79 /* RecentlyClosedTabs Updater.app */; };
+		E25460B0117191A800260D79 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = E23505AD1138179E008A523C /* dsa_pub.pem */; };
+		E2546104117191E800260D79 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2546103117191E800260D79 /* Cocoa.framework */; };
+		E25461081171920200260D79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25461071171920200260D79 /* Foundation.framework */; };
+		E25461271171A8F700260D79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E25461261171A8F700260D79 /* main.m */; };
+		E25462531171AE3C00260D79 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25462521171AE3C00260D79 /* AppKit.framework */; };
 		E26DE3F5111B500300B738C8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E26DE3F4111B500300B738C8 /* JRSwizzle.m */; };
-		E27B50BF1131AF32002A5F34 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E27B50B01131AF16002A5F34 /* Sparkle.framework */; };
 		E28A70F2112ECF3200029908 /* NSArray+CWSortedInsert.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A70F0112ECF3200029908 /* NSArray+CWSortedInsert.m */; };
 		E2BFAEFA11218A5B0029689B /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAEF911218A5B0029689B /* Runtime.m */; };
 		E2BFAF39112193DE0029689B /* CustomToolbarButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BFAF38112193DE0029689B /* CustomToolbarButtonExtension.m */; };
+		E2D000D91171E0E8006C217C /* RCTUpdaterMain.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D000D81171E0E8006C217C /* RCTUpdaterMain.m */; };
 		E2DB74741129B5ED0045EEDA /* RCTToolbarButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */; };
 		E2DB75201129C4480045EEDA /* DetectClosingTabExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DB751F1129C4480045EEDA /* DetectClosingTabExtension.m */; };
 		E2DB756D112A99510045EEDA /* RecentlyClosedTabsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2DB756C112A99510045EEDA /* RecentlyClosedTabsWindow.xib */; };
@@ -53,12 +58,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E2350608113822B1008A523C /* PBXContainerItemProxy */ = {
+		E254608711718EC100260D79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E27B50A31131AF16002A5F34 /* Sparkle.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = Sparkle;
+		};
+		E25460921171903100260D79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E26F6D1118227A0007B2BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2546058117189B200260D79;
+			remoteInfo = "RecentlyClosedTabs Updater";
 		};
 		E269592C11455A48006F314D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -105,23 +117,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E27B50C01131AF5E002A5F34 /* CopyFiles */ = {
+		E254608F11718F4100260D79 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E27B50BF1131AF32002A5F34 /* Sparkle.framework in CopyFiles */,
+				E254608E11718F2300260D79 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E27B50C01131AF5E002A5F34 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				E25460911171901400260D79 /* RecentlyClosedTabs Updater.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E221834A1171B9FA00323119 /* RecentlyClosedTabsUpdaterWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyClosedTabsUpdaterWindow.xib; sourceTree = "<group>"; };
 		E23505AD1138179E008A523C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
-		E23506BB11382605008A523C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E23508A711399ED2008A523C /* ToolbarButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToolbarButtonIcon.png; sourceTree = "<group>"; };
-		E23C26091168AA6900FAD91E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E2546059117189B200260D79 /* RecentlyClosedTabs Updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RecentlyClosedTabs Updater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E254605B117189B200260D79 /* RecentlyClosedTabs Updater-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecentlyClosedTabs Updater-Info.plist"; sourceTree = "<group>"; };
+		E2546103117191E800260D79 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E25461071171920200260D79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E25461261171A8F700260D79 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E25462521171AE3C00260D79 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		E26DE3F3111B500300B738C8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
 		E26DE3F4111B500300B738C8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
 		E26DE521111D4BC200B738C8 /* Extending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extending.h; sourceTree = "<group>"; };
@@ -132,6 +159,8 @@
 		E2BFAEF911218A5B0029689B /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
 		E2BFAF37112193DE0029689B /* CustomToolbarButtonExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomToolbarButtonExtension.h; sourceTree = "<group>"; };
 		E2BFAF38112193DE0029689B /* CustomToolbarButtonExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomToolbarButtonExtension.m; sourceTree = "<group>"; };
+		E2D000D71171E0E8006C217C /* RCTUpdaterMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTUpdaterMain.h; sourceTree = "<group>"; };
+		E2D000D81171E0E8006C217C /* RCTUpdaterMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTUpdaterMain.m; sourceTree = "<group>"; };
 		E2DB74721129B5ED0045EEDA /* RCTToolbarButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTToolbarButtonController.h; sourceTree = "<group>"; };
 		E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTToolbarButtonController.m; sourceTree = "<group>"; };
 		E2DB751E1129C4480045EEDA /* DetectClosingTabExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectClosingTabExtension.h; sourceTree = "<group>"; };
@@ -149,13 +178,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E2546057117189B200260D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22183FB1171C7EB00323119 /* Sparkle.framework in Frameworks */,
+				E25462531171AE3C00260D79 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2E26FDA111873A20007B2BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E235080111382DD6008A523C /* Sparkle.framework in Frameworks */,
-				E23506BC11382605008A523C /* Cocoa.framework in Frameworks */,
-				E23C260A1168AA6900FAD91E /* CoreFoundation.framework in Frameworks */,
+				E2546104117191E800260D79 /* Cocoa.framework in Frameworks */,
+				E25461081171920200260D79 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +206,16 @@
 				E2BFAEF911218A5B0029689B /* Runtime.m */,
 			);
 			name = Runtime;
+			sourceTree = "<group>";
+		};
+		E25460B3117191B200260D79 /* Apple Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2546103117191E800260D79 /* Cocoa.framework */,
+				E25461071171920200260D79 /* Foundation.framework */,
+				E25462521171AE3C00260D79 /* AppKit.framework */,
+			);
+			name = "Apple Frameworks";
 			sourceTree = "<group>";
 		};
 		E26DE3F6111B500800B738C8 /* JRSwizzle */ = {
@@ -213,12 +260,69 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		E2DB756B112A99360045EEDA /* Resources */ = {
+		E2D000DD1171E117006C217C /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				E2E26FDE111873A20007B2BF /* Info.plist */,
+				E2D000DF1171E138006C217C /* Sources */,
+				E2D000DE1171E120006C217C /* Resources */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		E2D000DE1171E120006C217C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				E23508A711399ED2008A523C /* ToolbarButtonIcon.png */,
-				E23505AD1138179E008A523C /* dsa_pub.pem */,
 				E2DB756C112A99510045EEDA /* RecentlyClosedTabsWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2D000DF1171E138006C217C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E28A70F3112ECF3700029908 /* CWSortedInsert */,
+				E26DE3F6111B500800B738C8 /* JRSwizzle */,
+				E235053C1137FCB1008A523C /* Runtime */,
+				E2BFAE79112177080029689B /* Extensions */,
+				E2E26FC8111864E10007B2BF /* RCTPluginMain.h */,
+				E2E26FC9111864E10007B2BF /* RCTPluginMain.m */,
+				E2DB7574112A9B150045EEDA /* RCTClosedTab.h */,
+				E2DB7575112A9B150045EEDA /* RCTClosedTab.m */,
+				E2DB7570112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.h */,
+				E2DB7571112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.m */,
+				E2DB74721129B5ED0045EEDA /* RCTToolbarButtonController.h */,
+				E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		E2D000E61171E1B2006C217C /* Updater */ = {
+			isa = PBXGroup;
+			children = (
+				E254605B117189B200260D79 /* RecentlyClosedTabs Updater-Info.plist */,
+				E2D000E71171E1BD006C217C /* Sources */,
+				E2D000E81171E1D3006C217C /* Resources */,
+			);
+			name = Updater;
+			sourceTree = "<group>";
+		};
+		E2D000E71171E1BD006C217C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E25461261171A8F700260D79 /* main.m */,
+				E2D000D71171E0E8006C217C /* RCTUpdaterMain.h */,
+				E2D000D81171E0E8006C217C /* RCTUpdaterMain.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		E2D000E81171E1D3006C217C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E23505AD1138179E008A523C /* dsa_pub.pem */,
+				E221834A1171B9FA00323119 /* RecentlyClosedTabsUpdaterWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -227,46 +331,18 @@
 			isa = PBXGroup;
 			children = (
 				E27B50A31131AF16002A5F34 /* Sparkle.xcodeproj */,
-				E2E26F7E111822A40007B2BF /* Sources */,
-				E2DB756B112A99360045EEDA /* Resources */,
+				E2D000E61171E1B2006C217C /* Updater */,
+				E2D000DD1171E117006C217C /* Plugin */,
 				E2E26FDD111873A20007B2BF /* Products */,
-				E2E26FDE111873A20007B2BF /* Info.plist */,
-				E23506BB11382605008A523C /* Cocoa.framework */,
-				E23C26091168AA6900FAD91E /* CoreFoundation.framework */,
+				E25460B3117191B200260D79 /* Apple Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		E2E26F7E111822A40007B2BF /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				E235053C1137FCB1008A523C /* Runtime */,
-				E2E26FC7111864D00007B2BF /* Plugin */,
-				E28A70F3112ECF3700029908 /* CWSortedInsert */,
-				E26DE3F6111B500800B738C8 /* JRSwizzle */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		E2E26FC7111864D00007B2BF /* Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				E2BFAE79112177080029689B /* Extensions */,
-				E2E26FC8111864E10007B2BF /* RCTPluginMain.h */,
-				E2E26FC9111864E10007B2BF /* RCTPluginMain.m */,
-				E2DB74721129B5ED0045EEDA /* RCTToolbarButtonController.h */,
-				E2DB74731129B5ED0045EEDA /* RCTToolbarButtonController.m */,
-				E2DB7570112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.h */,
-				E2DB7571112A9AB80045EEDA /* RCTRecentlyClosedTabsWindowContoller.m */,
-				E2DB7574112A9B150045EEDA /* RCTClosedTab.h */,
-				E2DB7575112A9B150045EEDA /* RCTClosedTab.m */,
-			);
-			name = Plugin;
 			sourceTree = "<group>";
 		};
 		E2E26FDD111873A20007B2BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				E2E26FDC111873A20007B2BF /* RecentlyClosedTabs.bundle */,
+				E2546059117189B200260D79 /* RecentlyClosedTabs Updater.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,6 +350,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E2546058117189B200260D79 /* RecentlyClosedTabs Updater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2546061117189B300260D79 /* Build configuration list for PBXNativeTarget "RecentlyClosedTabs Updater" */;
+			buildPhases = (
+				E2546055117189B200260D79 /* Resources */,
+				E254608F11718F4100260D79 /* CopyFiles */,
+				E2546056117189B200260D79 /* Sources */,
+				E2546057117189B200260D79 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E254608811718EC100260D79 /* PBXTargetDependency */,
+			);
+			name = "RecentlyClosedTabs Updater";
+			productName = "RecentlyClosedTabs Updater";
+			productReference = E2546059117189B200260D79 /* RecentlyClosedTabs Updater.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2E26FE1111873A30007B2BF /* Build configuration list for PBXNativeTarget "RecentlyClosedTabs" */;
@@ -286,7 +381,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E2350609113822B1008A523C /* PBXTargetDependency */,
+				E25460931171903100260D79 /* PBXTargetDependency */,
 			);
 			name = RecentlyClosedTabs;
 			productName = SafariWindowManager;
@@ -316,6 +411,7 @@
 			projectRoot = "";
 			targets = (
 				E2E26FDB111873A20007B2BF /* RecentlyClosedTabs */,
+				E2546058117189B200260D79 /* RecentlyClosedTabs Updater */,
 				E269592911455A40006F314D /* Install */,
 				E269596211456508006F314D /* Publish */,
 			);
@@ -354,12 +450,20 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E2546055117189B200260D79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25460B0117191A800260D79 /* dsa_pub.pem in Resources */,
+				E221834B1171B9FA00323119 /* RecentlyClosedTabsUpdaterWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2E26FD8111873A20007B2BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E2DB756D112A99510045EEDA /* RecentlyClosedTabsWindow.xib in Resources */,
-				E23505AE1138179E008A523C /* dsa_pub.pem in Resources */,
 				E23508A811399ED2008A523C /* ToolbarButtonIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,11 +495,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "VERSION=$(defaults read \"${TARGET_BUILD_DIR}/${PROJECT_NAME}.bundle/Contents/Info\" CFBundleVersion)\nINSTALLER_PROJECT=\"${SRCROOT}/Installer/Recently Closed Tabs.packproj\"\nINSTALLER=\"${SRCROOT}/Installer/build/Recently Closed Tabs.mpkg\"\nINSTALLER_ZIP=\"${SRCROOT}/Installer/build/Recently Closed Tabs ${VERSION}.zip\"\n\nfreeze \"${INSTALLER_PROJECT}\"\nditto -c -k --keepParent -rsrc \"${INSTALLER}\" \"${INSTALLER_ZIP}\"\nSIGNATURE=$(openssl dgst -sha1 -binary < \"${INSTALLER_ZIP}\" | openssl dgst -dss1 -sign <(security find-generic-password -g -s \"Sparkle Private Key\" 2>&1 1>/dev/null | sed -n 's/.*\\(-----BEGIN DSA PRIVATE KEY\\)\\(.*\\)\\(END DSA PRIVATE KEY-----\\).*/\\1\\2\\3/p' | perl -pi -e 's/\\\\015/\\n/g') | openssl enc -base64)\n\necho \"signature: ${SIGNATURE}\" > \"${SRCROOT}/Installer/build/appcast.xml\"\necho \"length: `ls -l \"${INSTALLER_ZIP}\" | awk '{print $5}'`\" >> \"${SRCROOT}/Installer/build/appcast.xml\"\n\nexit 0";
+			shellScript = "VERSION=$(defaults read \"${TARGET_BUILD_DIR}/${PROJECT_NAME}.bundle/Contents/Info\" CFBundleVersion)\nINSTALLER_PROJECT=\"${SRCROOT}/Installer/RecentlyClosedTabs.packproj\"\nINSTALLER=\"${SRCROOT}/Installer/build/RecentlyClosedTabs.mpkg\"\nINSTALLER_ZIP=\"${SRCROOT}/Installer/build/RecentlyClosedTabs ${VERSION}.zip\"\n\nfreeze \"${INSTALLER_PROJECT}\"\nditto -c -k --keepParent -rsrc \"${INSTALLER}\" \"${INSTALLER_ZIP}\"\nSIGNATURE=$(openssl dgst -sha1 -binary < \"${INSTALLER_ZIP}\" | openssl dgst -dss1 -sign <(security find-generic-password -g -s \"Sparkle Private Key\" 2>&1 1>/dev/null | sed -n 's/.*\\(-----BEGIN DSA PRIVATE KEY\\)\\(.*\\)\\(END DSA PRIVATE KEY-----\\).*/\\1\\2\\3/p' | perl -pi -e 's/\\\\015/\\n/g') | openssl enc -base64)\n\necho \"signature: ${SIGNATURE}\" > \"${SRCROOT}/Installer/build/appcast.xml\"\necho \"length: `ls -l \"${INSTALLER_ZIP}\" | awk '{print $5}'`\" >> \"${SRCROOT}/Installer/build/appcast.xml\"\n\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E2546056117189B200260D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25461271171A8F700260D79 /* main.m in Sources */,
+				E2D000D91171E0E8006C217C /* RCTUpdaterMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E2E26FD9111873A20007B2BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,10 +528,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E2350609113822B1008A523C /* PBXTargetDependency */ = {
+		E254608811718EC100260D79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sparkle;
-			targetProxy = E2350608113822B1008A523C /* PBXContainerItemProxy */;
+			targetProxy = E254608711718EC100260D79 /* PBXContainerItemProxy */;
+		};
+		E25460931171903100260D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2546058117189B200260D79 /* RecentlyClosedTabs Updater */;
+			targetProxy = E25460921171903100260D79 /* PBXContainerItemProxy */;
 		};
 		E269592D11455A48006F314D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -433,6 +551,63 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E254605C117189B300260D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "RecentlyClosedTabs Updater-Info.plist";
+				INSTALL_PATH = "@loader_path/../Resources/";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "RecentlyClosedTabs Updater";
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		E254605D117189B300260D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "RecentlyClosedTabs Updater-Info.plist";
+				INSTALL_PATH = "@loader_path/../Resources/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "RecentlyClosedTabs Updater";
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		E269592A11455A40006F314D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,7 +660,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				RUN_CLANG_STATIC_ANALYZER = NO;
-				VALID_ARCHS = x86_64;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -495,11 +671,27 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_UNROLL_LOOPS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_VERSION = 1.2;
 				RUN_CLANG_STATIC_ANALYZER = NO;
-				VALID_ARCHS = x86_64;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
@@ -507,10 +699,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -524,6 +722,8 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = RecentlyClosedTabs;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -531,14 +731,20 @@
 		E2E26FE0111873A30007B2BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_UNROLL_LOOPS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
 				HEADER_SEARCH_PATHS = "";
@@ -553,6 +759,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = RecentlyClosedTabs;
 				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -561,6 +768,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E2546061117189B300260D79 /* Build configuration list for PBXNativeTarget "RecentlyClosedTabs Updater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E254605C117189B300260D79 /* Debug */,
+				E254605D117189B300260D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E269593D11455A94006F314D /* Build configuration list for PBXAggregateTarget "Install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
