@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.kulakov.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.kulakov.recentlyclosedtabs-updater</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -34,5 +34,9 @@
 	<false/>
 	<key>SUAllowsAutomaticUpdates</key>
 	<false/>
+	<key>SUUpdaterBundleIdentifier</key>
+	<string>com.kulakov.recentlyclosedtabs</string>
+	<key>SUUpdaterDisplayName</key>
+	<string>RecentlyClosedTabs</string>
 </dict>
 </plist>

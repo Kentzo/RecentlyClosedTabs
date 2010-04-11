@@ -1365,7 +1365,7 @@
 									<key>IFPkgDescriptionTitle</key>
 									<string>RecentlyClosedTabs Plugin</string>
 									<key>IFPkgDescriptionVersion</key>
-									<string>1.3</string>
+									<string>1.3.1</string>
 								</dict>
 							</dict>
 							<key>Display Information</key>
@@ -1381,7 +1381,7 @@
 								<key>CFBundleName</key>
 								<string>RecentlyClosedTabs Plugin</string>
 								<key>CFBundleShortVersionString</key>
-								<string>1.3</string>
+								<string>1.3.1</string>
 							</dict>
 							<key>Options</key>
 							<dict>
@@ -1624,13 +1624,13 @@
 						<key>IFPkgDescriptionTitle</key>
 						<string>RecentlyClosedTabs</string>
 						<key>IFPkgDescriptionVersion</key>
-						<string>1.3</string>
+						<string>1.3.1</string>
 					</dict>
 				</dict>
 				<key>Display Information</key>
 				<dict>
 					<key>CFBundleGetInfoString</key>
-					<string>RecentlyClosedTabs 1.3 Copyrights © 2010 Kulakov Ilya</string>
+					<string>RecentlyClosedTabs 1.3.1 Copyrights © 2010 Kulakov Ilya</string>
 					<key>CFBundleIconFile</key>
 					<string></string>
 					<key>CFBundleIconFile Path Type</key>
@@ -1640,7 +1640,7 @@
 					<key>CFBundleName</key>
 					<string>RecentlyClosedTabs</string>
 					<key>CFBundleShortVersionString</key>
-					<string>1.3</string>
+					<string>1.3.1</string>
 				</dict>
 				<key>Version</key>
 				<dict>
